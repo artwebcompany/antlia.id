@@ -351,7 +351,7 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials */}
-      <TestimonialsSlider />
+      {/* <TestimonialsSlider /> */}
 
       {/* Partner Logos */}
       <LogoMarquee logos={partners} />

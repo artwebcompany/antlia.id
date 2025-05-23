@@ -54,7 +54,7 @@ const ContactPage = () => {
       `Pesan:%0A${formData.message}`;
     
     // Open WhatsApp with the message
-    window.open(`https://wa.me/6281573635143?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/6287702770999?text=${whatsappMessage}`, '_blank');
     
     // Reset form
     setFormSubmitted(true);
