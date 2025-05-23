@@ -70,7 +70,7 @@ Dokumentasi ini menjelaskan langkah-langkah migrasi database dan setup Supabase 
 
 > agar Admin dapat upload & simpan gambar-gambar dari artikel, lengkap dengan konfigurasi **akses publik untuk membaca**, dan **hanya user login yang bisa upload**
 
-8. Langsung ke **SQL Editor** & Jalankan **Query** Berikut :
+8. Langsung ke menu "**SQL Editor**" & Jalankan **Query** Berikut :
 
 > Sudah disesuaikan dengan Source-code, jadi **tidak perlu diubah**.
 
@@ -250,15 +250,18 @@ Buka browser dan akses domain:
 | Error saat build                | Perbaiki error di lokal menggunakan `npm run build`                    |
 | Tidak bisa akses domain         | Tunggu DNS propagation atau cek pengaturan domain                      |
 
+----------------------------------------------------------------------------------------------------------------------
 # Cara setting page atau Update dan pembaharuan project di lain waktu
+---------------------------------------------------------------------------------------------------------------------
 
 ## Update page
-- di bagian folder src/"component" dan "page" (atau bisa langsung ctrl + f untuk mencari yang ingin di update)
+- untuk edit page ada di bagian folder src/"component" atau "page" (atau bisa langsung ctrl + f untuk mencari yang ingin di update)
+- untuk mengganti atau menambah gambar ada di "**public/asset**" jadi jika ingin mengganti atau menambah gambar **bukan** di folder "**dist/assets**"
 
 ## Deploy ulang
-- setiap update wajib di "build" kembali untuk menghasilkan folder "dist/" terbaru
-- upload kembali file "dist/" terbaru yang sudah di build ke layanan Hosting
-- Update Project Selesai
+- setiap update wajib di "**build**" kembali untuk menghasilkan folder "**dist/**" terbaru
+- upload kembali file "**dist/**" terbaru yang sudah di build ke layanan Hosting
+- Update Project Selesai.
 
 
 
