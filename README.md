@@ -1,6 +1,6 @@
 
 
-# DOKUMENTASI DEPLOY DAN DB - MIGRATION
+# DOKUMENTASI DEPLOY DAN DB - MIGRATION.
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -8,19 +8,19 @@
 -------------------------------------------------------------------------------------------------------------
 
 
-# Deploy Project React + Vite + TypeScript + Tailwind CSS ke Hostinger
+# Deploy Project React + Vite + TypeScript + Tailwind CSS ke Hostinger.
 
 ## Deskripsi
 Panduan ini berisi langkah-langkah lengkap untuk mendeploy aplikasi React dengan Vite, TypeScript, Tailwind CSS, dan shadcn-ui ke layanan hosting Hostinger. Panduan dimulai dari pengaturan lokal di Visual Studio Code hingga proses upload file ke Hostinger via cPanel.
 
 ## Prasyarat
-- Akses ke akun Hostinger (dengan domain aktif)
-- Visual Studio Code (VSCode) sudah terinstall
+- Akses ke akun Hostinger (dengan domain aktif).
+- Visual Studio Code (VSCode) sudah terinstall.
 - Node.js dan npm sudah terinstall (`node -v` & `npm -v` bisa dicek di terminal)
 - Proyek React dengan Vite + TypeScript + Tailwind CSS + shadcn-ui sudah tersedia
-- FTP Client (opsional), namun kita akan gunakan fitur File Manager di cPanel Hostinger
+- FTP Client (opsional), namun kita akan gunakan fitur File Manager di cPanel Hostinger.
 
-## Langkah 1: Persiapan Proyek di VSCode
+## Langkah 1: Persiapan Proyek di VSCode.
 1. Buka proyek di VSCode:
    ```bash
    code /path/to/your/project
@@ -62,7 +62,7 @@ Jika tidak ada folder `dist`, maka build gagal. Perbaiki error dan ulangi langka
    Hapus semua isi folder `/public_html/` jika ingin mengganti seluruh situs.
 
 2. Upload isi folder `dist/`:
-   - **Opsi A: ZIP folder dist/** dan upload
+   - **Opsi A: ZIP folder dist/** dan upload.
      ```bash
      zip -r dist.zip dist/
      ```
