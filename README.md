@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------------------------------------
 
 
-# Deploy Project React + Vite + TypeScript + Tailwind CSS + Shadcn-ui ke Hostinger
+# Deploy Project React + Vite + TypeScript + Tailwind CSS ke Hostinger
 
 ## Deskripsi
 Panduan ini berisi langkah-langkah lengkap untuk mendeploy aplikasi React dengan Vite, TypeScript, Tailwind CSS, dan shadcn-ui ke layanan hosting Hostinger. Panduan dimulai dari pengaturan lokal di Visual Studio Code hingga proses upload file ke Hostinger via cPanel.
