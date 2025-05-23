@@ -1,6 +1,6 @@
 
 
-# DOKUMENTASI DEPLOY DAN DB-MIGRATION
+# DOKUMENTASI DEPLOY DAN DB - MIGRATION
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -8,19 +8,19 @@
 -------------------------------------------------------------------------------------------------------------
 
 
-# 📦 Deploy Project React + Vite + TypeScript + Tailwind CSS + Shadcn-ui ke Hostinger
+# Deploy Project React + Vite + TypeScript + Tailwind CSS + Shadcn-ui ke Hostinger
 
-## 🧾 Deskripsi
+## Deskripsi
 Panduan ini berisi langkah-langkah lengkap untuk mendeploy aplikasi React dengan Vite, TypeScript, Tailwind CSS, dan shadcn-ui ke layanan hosting Hostinger. Panduan dimulai dari pengaturan lokal di Visual Studio Code hingga proses upload file ke Hostinger via cPanel.
 
-## 🔧 Prasyarat
+## Prasyarat
 - Akses ke akun Hostinger (dengan domain aktif)
 - Visual Studio Code (VSCode) sudah terinstall
 - Node.js dan npm sudah terinstall (`node -v` & `npm -v` bisa dicek di terminal)
 - Proyek React dengan Vite + TypeScript + Tailwind CSS + shadcn-ui sudah tersedia
 - FTP Client (opsional), namun kita akan gunakan fitur File Manager di cPanel Hostinger
 
-## 🚀 Langkah 1: Persiapan Proyek di VSCode
+## Langkah 1: Persiapan Proyek di VSCode
 1. Buka proyek di VSCode:
    ```bash
    code /path/to/your/project
@@ -39,7 +39,7 @@ Panduan ini berisi langkah-langkah lengkap untuk mendeploy aplikasi React dengan
    ```
    Output akan ada di folder `dist/` (default untuk Vite).
 
-## 📁 Langkah 2: Periksa Isi Folder dist/
+## Langkah 2: Periksa Isi Folder dist/
 Setelah build selesai, pastikan folder `dist/` memiliki struktur seperti:
 
 ```
@@ -51,15 +51,15 @@ dist/
 
 Jika tidak ada folder `dist`, maka build gagal. Perbaiki error dan ulangi langkah `npm run build`.
 
-## 🌐 Langkah 3: Login ke cPanel Hostinger
+## Langkah 3: Login ke cPanel Hostinger
 1. Buka [https://www.hostinger.co.id](https://www.hostinger.co.id) dan login.
 2. Pergi ke menu Hosting → pilih paket yang ingin digunakan.
 3. Klik tombol **cPanel**.
 4. Di dalam cPanel, cari menu **File Manager**.
 
-## 📤 Langkah 4: Upload File Hasil Build ke Server
+## Langkah 4: Upload File Hasil Build ke Server
 1. Buka File Manager dan navigasi ke folder: `/public_html/` (atau sesuai domain utama).  
-   ⚠️ Hapus semua isi folder `/public_html/` jika ingin mengganti seluruh situs.
+   Hapus semua isi folder `/public_html/` jika ingin mengganti seluruh situs.
 
 2. Upload isi folder `dist/`:
    - **Opsi A: ZIP folder dist/** dan upload
@@ -71,7 +71,7 @@ Jika tidak ada folder `dist`, maka build gagal. Perbaiki error dan ulangi langka
      - Ekstrak folder `dist/` di lokal.
      - Upload isinya (folder `assets`, file `index.html`, dll) ke `/public_html/`.
 
-## 🔄 Langkah 5: Atur Routing untuk React Router DOM
+## Langkah 5: Atur Routing untuk React Router DOM
 Karena menggunakan `react-router-dom`, kamu perlu membuat file `.htaccess` agar routing SPA bekerja dengan benar.
 
 Buat file `.htaccess` di `/public_html/` dengan isi berikut:
@@ -87,11 +87,11 @@ Buat file `.htaccess` di `/public_html/` dengan isi berikut:
 </IfModule>
 ```
 
-## 🌍 Langkah 6: Cek Website di Browser
+## Langkah 6: Cek Website di Browser
 Buka browser dan akses domain:  
 [http://antlia.id](http://antlia.id)
 
-## 🧪 Troubleshooting Umum
+## Troubleshooting Umum
 
 | Masalah                         | Solusi                                                                 |
 |---------------------------------|------------------------------------------------------------------------|
@@ -197,7 +197,7 @@ Dokumentasi ini menjelaskan langkah-langkah migrasi database dan setup Supabase 
 
 ---
 
-## 👤 IV. TAMBAH ADMIN UNTUK EDIT ARTIKEL
+## IV. TAMBAH ADMIN UNTUK EDIT ARTIKEL
 
 13. Masuk ke menu **Authentication > Users**  
     - Klik **Add User**
@@ -207,7 +207,7 @@ Dokumentasi ini menjelaskan langkah-langkah migrasi database dan setup Supabase 
 
 ---
 
-## ✅ Selesai!
+## Selesai!
 
-Kamu telah berhasil menyelesaikan proses setup database dan autentikasi berbasis email menggunakan Supabase.
+
 
