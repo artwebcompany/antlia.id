@@ -107,7 +107,7 @@ WITH CHECK (bucket_id = 'articles');
 
 ---
 
-## (OPTIONAL) Konfigurasi Tambahan: Maksimal Ukuran & Tipe File
+## (OPTIONAL) Konfigurasi Tambahan : Untuk set Maksimal Ukuran & Tipe File
 
 > Masuk ke menu **Storage > Bucket `articles` > Edit bucket**
 > Di bagian **Additional configuration**, atur:
@@ -250,6 +250,15 @@ Buka browser dan akses domain:
 | Error saat build                | Perbaiki error di lokal menggunakan `npm run build`                    |
 | Tidak bisa akses domain         | Tunggu DNS propagation atau cek pengaturan domain                      |
 
+# Cara setting page atau Update dan pembaharuan project di lain waktu
+
+## Update page
+- di bagian folder src/"component" dan "page" (atau bisa langsung ctrl + f untuk mencari yang ingin di update)
+
+## Deploy ulang
+- setiap update wajib di "build" kembali untuk menghasilkan folder "dist/" terbaru
+- upload kembali file "dist/" terbaru yang sudah di build ke layanan Hosting
+- Update Project Selesai
 
 
 
