@@ -1,6 +1,6 @@
 
 
-# DOKUMENTASI DEPLOY DAN DB - MIGRATION.
+# DOKUMENTASI DEPLOY DAN DB - MIGRATION
 
 
 -------------------------------------------------------------------------------------------------------------
