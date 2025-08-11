@@ -1,0 +1,101 @@
+{
+    "clientsPage": {
+      "hero": {
+        "title": "Our Clients",
+        "subtitle": "Success stories from clients who have trusted ANTLIA's services"
+      },
+      "featuredClients": {
+        "subtitle": "Our Partners",
+        "title": "Featured Clients",
+        "description": "Leading companies that have entrusted their digital transformation to ANTLIA",
+        "clients": [
+          {
+            "name": "Bank Nusantara",
+            "industry": "Banking & Finance"
+          },
+          {
+            "name": "Tech Innovations",
+            "industry": "Technology"
+          },
+          {
+            "name": "MegaRetail Group",
+            "industry": "Retail & E-commerce"
+          },
+          {
+            "name": "Indo Manufactur",
+            "industry": "Manufacturing"
+          }
+        ]
+      },
+      "caseStudies": {
+        "subtitle": "Success Stories",
+        "title": "Case Studies",
+        "description": "Stories of digital transformation success with our clients",
+        "resultLabel": "Result:",
+        "button": "View All Case Studies",
+        "studies": [
+          {
+            "title": "ERP System Implementation",
+            "description": "Modernizing business systems is EASIER",
+            "result": "30% increase in operational efficiency",
+            "clientName": "Techno",
+            "image": "/assets/product-3.jpg",
+            "industry": "Banking & Finance"
+          },
+          {
+            "title": "POS System",
+            "description": "Implementation of a POS SYSTEM with a positive impact",
+            "result": "45% increase in online sales",
+            "clientName": "antlia",
+            "image": "/assets/product-2.jpg",
+            "industry": "Retail & E-commerce"
+          },
+          {
+            "title": "Smart Factory Implementation",
+            "description": "BEST IMPLEMENTATION",
+            "result": "25% reduction in operational costs",
+            "clientName": "IKN",
+            "image": "/assets/product-4.jpg",
+            "industry": "Manufacturing"
+          }
+        ]
+      },
+      "testimonials": {
+        "subtitle": "Client Feedback",
+        "title": "Testimonials",
+        "description": "What our clients say about their experience working with ANTLIA",
+        "testimonialsList": [
+          {
+            "name": "Elia Fernandoo",
+            "position": "CIO",
+            "company": "Bank Nusantara",
+            "content": "ANTLIA understands our business needs very well and delivers solutions that far exceed expectations. The systems they have developed have become the backbone of our operations."
+          },
+          {
+            "name": "Eva Ria Damanik",
+            "position": "CIO",
+            "company": "Bank Nusantara",
+            "content": "ANTLIA understands our business needs very well and delivers solutions that far exceed expectations. The systems they have developed have become the backbone of our operations."
+          },
+          {
+            "name": "Fernando Girsang",
+            "position": "CIO",
+            "company": "Bank Nusantara",
+            "content": "ANTLIA understands our business needs very well and delivers solutions that far exceed expectations. The systems they have developed have become the backbone of our operations."
+          }
+        ]
+      },
+      "allClients": {
+        "subtitle": "Our Clientele",
+        "title": "All Clients",
+        "description": "Various companies from different industries that have partnered with ANTLIA"
+      },
+      "cta": {
+        "title": "Join Our Clients",
+        "description": "Start your digital transformation journey with ANTLIA and feel the difference. Our team is ready to help you navigate challenges and seize opportunities in the digital era.",
+        "contactButton": "Contact Us",
+        "consultationButton": "Free Consultation"
+      }
+    }
+  }
+  

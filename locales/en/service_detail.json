@@ -1,0 +1,123 @@
+{
+    "notFound": {
+      "title": "Service Not Found",
+      "description": "Sorry, the service you are looking for could not be found.",
+      "backButton": "Back to Services List"
+    },
+    "hero": {
+      "category": "Category: {{category}}"
+    },
+    "introduction": {
+      "backButton": "Back to Services List",
+      "discussButton": "Discuss Your Needs",
+      "whatsappButton": "Consult via WhatsApp"
+    },
+    "process": {
+      "subtitle": "Methodology",
+      "title": "Our Working Process",
+      "description": "Our systematic approach to delivering high-quality {{serviceName}}",
+      "step1": {
+        "title": "Needs Analysis",
+        "description": "We listen and analyze your specific business needs to design the most suitable solution."
+      },
+      "step2": {
+        "title": "Solution Design",
+        "description": "Our expert team designs effective and scalable solutions, considering your company's long-term goals."
+      },
+      "step3": {
+        "title": "Implementation & Support",
+        "description": "We carefully implement the solution and provide full post-implementation support to ensure continuity."
+      }
+    },
+    "deliverables": {
+      "subtitle": "What You Get",
+      "title": "Deliverables"
+    },
+    "benefits": {
+      "subtitle": "Advantages",
+      "title": "Benefits"
+    },
+    "cta": {
+      "title": "Ready to Discuss Your Project?",
+      "description": "The ANTLIA team is ready to help you with a {{serviceName}} solution tailored to your business needs. Contact us now for an initial consultation.",
+      "discussButton": "Discuss Your Project"
+    },
+    "services": {
+      "it-consulting": {
+        "name": "IT Consulting",
+        "description": "IT consulting provides technology solutions for business problems related to IT infrastructure, system management, and planning for more efficient technology implementation.",
+        "longDescription": "IT consulting provides technology solutions for business problems related to IT infrastructure, system management, and planning for more efficient technology implementation. This service helps companies improve operational performance, maintain data security, and provide solutions tailored to your company's specific needs.",
+        "deliverables": [
+          "IT System Evaluation: Conducting an audit and evaluation of existing IT systems.",
+          "Implementation Planning: Helping to plan and execute the implementation of new technology solutions.",
+          "Infrastructure Management: Providing IT infrastructure management services such as servers, networks, and hardware.",
+          "IT Security: Providing solutions to enhance data security and protection against cyber threats.",
+          "System Maintenance: Maintenance and troubleshooting services to ensure optimal availability and performance."
+        ],
+        "benefits": [
+          "Increases company's operational performance and efficiency.",
+          "Ensures data and IT system security.",
+          "Provides solutions tailored to company needs."
+        ]
+      },
+      "business-operations-consulting": {
+        "name": "Business Operations Consulting",
+        "description": "Operational consulting services to improve business performance through team development, process optimization, and implementation of effective control systems.",
+        "longDescription": "The operational consulting services we offer aim to add value to clients through problem-solving, performance improvement, and capacity development. We help companies optimize business processes, build more efficient teams, and implement control systems and continuous improvement to support sustainable growth.",
+        "deliverables": [
+          "Team and Managerial Development Services: Conflict management, report creation, effective task delegation, and performance management, complete with certified training.",
+          "Business Process and Operational Analysis: Operational evaluation, improvement of inefficient processes, design of control systems, cost analysis to reduce costs and increase profit margins.",
+          "Supply Chain Development and Continuous Improvement: Demand planning, procurement, sourcing, logistics, and the implementation of continuous improvement across all parts of the company.",
+          "Ongoing Consulting & Training Projects: Covering critical areas such as HR management, marketing, and technology to achieve operational goals effectively and efficiently."
+        ],
+        "benefits": [
+          "Significant improvement in operational performance",
+          "Development of more professional team and managerial capacity",
+          "Operational cost efficiency and increased profitability",
+          "Implementation of control systems and continuous improvement",
+          "Strategic support for achieving long-term company goals"
+        ]
+      },
+      "excel-training-course": {
+        "name": "Excel Training Course",
+        "description": "Microsoft Excel training to improve data analysis skills and professional report preparation in various business fields.",
+        "longDescription": "This Excel training is designed to improve skills in using Microsoft Excel for various industries, such as finance, supply chain, marketing, and management. Each training module is equipped with practical exercises and real-world case studies, allowing participants to directly understand the application of Excel in the workplace. This training provides an understanding of how to use Excel to solve analytical tasks and produce professional reports.",
+        "deliverables": [
+          "Complete training modules for each level (Beginner, Intermediate, Advanced)",
+          "Practical exercises and real-world case studies",
+          "Official certificate after completing the training",
+          "Access to digital materials and Excel reference guides"
+        ],
+        "benefits": [
+          "Increases work productivity through Excel mastery",
+          "Better and more accurate data analysis capabilities",
+          "Creation of professional and easy-to-understand reports",
+          "Preparedness for jobs in various industries that require Excel",
+          "Increased individual and team competence"
+        ]
+      },
+      "workplace-communication-training": {
+        "name": "Workplace Communication Training Course",
+        "description": "Professional communication training to improve persuasive communication skills in the workplace in various situations and job levels.",
+        "longDescription": "This training aims to improve knowledge, understanding, and skills in persuasive communication, which can be applied in various professional situations. With this training, participants can analyze communication problems faced and find effective solutions to improve work relationships and build trust and credibility in the workplace. The training uses online media and interactive devices to facilitate a better understanding of the techniques taught. Participants will receive an official certificate. The training is taught by experienced instructors, including Meike Lusye Karolus, S.Sos., M.A. and Angela Frenzia Betyarini, S.S., M.A., who have strong academic and professional backgrounds in communication and media.",
+        "deliverables": [
+          "Persuasive communication training for various levels (Beginner, Intermediate, Advanced)",
+          "Interactive materials and simulations of real-world workplace situations",
+          "Official certificate from experienced instructors",
+          "Access to digital modules and supporting learning materials"
+        ],
+        "benefits": [
+          "Improved professional and persuasive communication skills",
+          "Understanding of ethics and self-image in communication",
+          "Ability to manage conflicts and build positive work relationships",
+          "Increased self-confidence when speaking in public or giving presentations",
+          "Improved reputation and credibility in the workplace"
+        ]
+      }
+    },
+    "categories": {
+      "consulting": "Consulting",
+      "training": "Training"
+    }
+  }
+  

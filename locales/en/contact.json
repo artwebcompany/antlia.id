@@ -1,0 +1,60 @@
+{
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Our team is ready to assist you with your questions and needs"
+    },
+    "contactInfo": {
+      "subtitle": "Get in Touch",
+      "title": "Contact Information",
+      "description": "Contact us for a consultation, more information, or to start a collaboration.",
+      "phone": {
+        "title": "Phone",
+        "productLabel": "Product (Mr. Roni)",
+        "trainingLabel": "Training (Angela)"
+      },
+      "email": {
+        "title": "Email",
+        "productLabel": "Product",
+        "trainingLabel": "Training"
+      },
+      "address": {
+        "title": "Head Office",
+        "city": "Tangerang",
+        "line1": "The Avani Nittaya, BSD City,",
+        "line2": "Cisauk, Banten, Tangerang",
+        "line3": ""
+      },
+      "hours": {
+        "title": "Working Hours",
+        "weekday": "Monday - Friday: 08:00 - 17:00",
+        "saturday": "Saturday: 08:00 - 14.00",
+        "customerService": "Customer Service: 24/7"
+      }
+    },
+    "form": {
+      "title": "Send a Message",
+      "description": "Fill out the form below and our team will contact you as soon as possible.",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "example@email.com",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "+62 8xx xxxx xxxx",
+      "companyLabel": "Company (optional)",
+      "companyPlaceholder": "Company name",
+      "subjectLabel": "Service Type",
+      "subjectPlaceholder": "Select a service",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Explain your needs in detail...",
+      "submitButton": "Send Message",
+      "successTitle": "Message Sent!",
+      "successMessage": "Thank you for contacting us. Our team will review your message and get back to you shortly."
+    },
+    "map": {
+      "subtitle": "Our Location",
+      "title": "Find Us",
+      "description": "Visit our office to have a direct discussion with the ANTLIA team.",
+      "iframeTitle": "ANTLIA Office Location"
+    }
+  }
+  

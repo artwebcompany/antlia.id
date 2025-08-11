@@ -1,0 +1,123 @@
+{
+    "notFound": {
+      "title": "Layanan tidak ditemukan",
+      "description": "Maaf, layanan yang Anda cari tidak ditemukan.",
+      "backButton": "Kembali ke Daftar Layanan"
+    },
+    "hero": {
+      "category": "Kategori: {{category}}"
+    },
+    "introduction": {
+      "backButton": "Kembali ke Daftar Layanan",
+      "discussButton": "Diskusikan Kebutuhan Anda",
+      "whatsappButton": "Konsultasi via WhatsApp"
+    },
+    "process": {
+      "subtitle": "Metodologi",
+      "title": "Proses Kerja Kami",
+      "description": "Pendekatan sistematis kami untuk menghadirkan {{serviceName}} berkualitas tinggi",
+      "step1": {
+        "title": "Analisis Kebutuhan",
+        "description": "Kami mendengarkan dan menganalisis kebutuhan spesifik bisnis Anda untuk merancang solusi yang paling sesuai."
+      },
+      "step2": {
+        "title": "Perancangan Solusi",
+        "description": "Tim ahli kami merancang solusi yang efektif dan terukur, dengan mempertimbangkan tujuan jangka panjang perusahaan Anda."
+      },
+      "step3": {
+        "title": "Implementasi & Dukungan",
+        "description": "Kami mengimplementasikan solusi dengan cermat dan memberikan dukungan penuh pasca-implementasi untuk memastikan keberlanjutan."
+      }
+    },
+    "deliverables": {
+      "subtitle": "Apa yang Anda Dapatkan",
+      "title": "Deliverables"
+    },
+    "benefits": {
+      "subtitle": "Keuntungan",
+      "title": "Manfaat"
+    },
+    "cta": {
+      "title": "Siap untuk Mendiskusikan Proyek Anda?",
+      "description": "Tim ANTLIA siap membantu Anda dengan solusi {{serviceName}} yang disesuaikan dengan kebutuhan bisnis Anda. Hubungi kami sekarang untuk konsultasi awal.",
+      "discussButton": "Diskusikan Proyek Anda"
+    },
+    "services": {
+      "it-consulting": {
+        "name": "Konsultasi IT",
+        "description": "Konsultasi IT memberikan solusi teknologi untuk masalah bisnis yang terkait dengan infrastruktur TI, pengelolaan sistem, dan perencanaan implementasi teknologi yang lebih efisien.",
+        "longDescription": "Konsultasi IT memberikan solusi teknologi untuk masalah bisnis yang terkait dengan infrastruktur TI, pengelolaan sistem, dan perencanaan implementasi teknologi yang lebih efisien. Layanan ini membantu perusahaan dalam meningkatkan performa operasional, menjaga keamanan data, serta menyediakan solusi yang disesuaikan dengan kebutuhan spesifik perusahaan Anda.",
+        "deliverables": [
+          "Evaluasi Sistem TI: Melakukan audit dan evaluasi terhadap sistem TI yang sudah ada.",
+          "Perencanaan Implementasi: Membantu merencanakan dan melaksanakan implementasi solusi teknologi baru.",
+          "Pengelolaan Infrastruktur: Menyediakan layanan pengelolaan infrastruktur TI seperti server, jaringan, dan perangkat keras.",
+          "Keamanan TI: Menyediakan solusi untuk meningkatkan keamanan data dan perlindungan terhadap ancaman siber.",
+          "Pemeliharaan Sistem: Layanan pemeliharaan dan troubleshooting sistem untuk memastikan ketersediaan dan kinerja yang optimal."
+        ],
+        "benefits": [
+          "Meningkatkan performa dan efisiensi operasional perusahaan.",
+          "Menjamin keamanan data dan sistem TI.",
+          "Menyediakan solusi yang disesuaikan dengan kebutuhan perusahaan."
+        ]
+      },
+      "business-operations-consulting": {
+        "name": "Konsultasi Operasional Bisnis",
+        "description": "Jasa konsultasi operasional untuk peningkatan kinerja bisnis melalui pengembangan tim, optimasi proses, dan implementasi sistem pengendalian yang efektif.",
+        "longDescription": "Jasa konsultasi operasional yang kami tawarkan bertujuan untuk memberikan nilai tambah kepada klien melalui pemecahan masalah, peningkatan kinerja, dan pengembangan kapasitas. Kami membantu perusahaan mengoptimalkan proses bisnis, membangun tim yang lebih efisien, serta menerapkan sistem kontrol dan continuous improvement untuk mendukung pertumbuhan berkelanjutan.",
+        "deliverables": [
+          "Layanan Pengembangan Tim dan Manajerial: Pengelolaan konflik, pembuatan laporan, delegasi tugas yang efektif, dan manajemen kinerja, dilengkapi pelatihan bersertifikat.",
+          "Bisnis Proses dan Analisis Operasional: Evaluasi operasional, perbaikan proses tidak efisien, desain sistem pengendalian, analisis cost untuk menekan biaya dan meningkatkan margin keuntungan.",
+          "Pengembangan Supply Chain dan Continuous Improvement: Demand planning, procurement, sourcing, logistik, serta penerapan perbaikan berkelanjutan di seluruh bagian perusahaan.",
+          "Proyek Konsultasi & Pelatihan Berkelanjutan: Mencakup area kritikal seperti manajemen SDM, pemasaran, dan teknologi untuk mencapai tujuan operasional secara efektif dan efisien."
+        ],
+        "benefits": [
+          "Peningkatan kinerja operasional secara signifikan",
+          "Pengembangan kapasitas tim dan manajerial yang lebih profesional",
+          "Efisiensi biaya operasional dan peningkatan profitabilitas",
+          "Penerapan sistem kontrol dan perbaikan berkelanjutan",
+          "Dukungan strategis untuk pencapaian tujuan jangka panjang perusahaan"
+        ]
+      },
+      "excel-training-course": {
+        "name": "Pelatihan Excel",
+        "description": "Pelatihan Microsoft Excel untuk meningkatkan keterampilan analisis data dan penyusunan laporan profesional di berbagai bidang bisnis.",
+        "longDescription": "Pelatihan Excel ini dirancang untuk meningkatkan keterampilan penggunaan Microsoft Excel untuk berbagai industri, seperti keuangan, supply chain, pemasaran, dan manajemen. Setiap modul pelatihan dilengkapi dengan latihan praktis dan studi kasus nyata, memungkinkan peserta untuk memahami penerapan Excel di dunia kerja secara langsung. Pelatihan ini memberikan pemahaman tentang cara menggunakan Excel untuk menyelesaikan tugas analitis dan menghasilkan laporan yang profesional.",
+        "deliverables": [
+          "Modul pelatihan lengkap untuk setiap tingkatan (Beginner, Intermediate, Advanced)",
+          "Latihan praktis dan studi kasus nyata",
+          "Sertifikat resmi setelah menyelesaikan pelatihan",
+          "Akses ke materi digital dan panduan referensi Excel"
+        ],
+        "benefits": [
+          "Meningkatkan produktivitas kerja melalui penguasaan Excel",
+          "Kemampuan analisis data yang lebih baik dan akurat",
+          "Pembuatan laporan yang profesional dan mudah dipahami",
+          "Kesiapan untuk pekerjaan di berbagai industri yang membutuhkan Excel",
+          "Peningkatan kompetensi individu dan tim"
+        ]
+      },
+      "workplace-communication-training": {
+        "name": "Pelatihan Komunikasi di Tempat Kerja",
+        "description": "Pelatihan komunikasi profesional untuk meningkatkan kemampuan komunikasi persuasif di tempat kerja pada berbagai situasi dan level jabatan.",
+        "longDescription": "Pelatihan ini bertujuan untuk meningkatkan pengetahuan, pemahaman, dan keterampilan dalam komunikasi persuasif, yang dapat diterapkan dalam berbagai situasi profesional. Dengan pelatihan ini, peserta dapat menganalisis masalah komunikasi yang dihadapi dan mencari solusi efektif untuk meningkatkan hubungan kerja serta membangun kepercayaan dan kredibilitas di tempat kerja. Pelatihan menggunakan media online dan perangkat interaktif untuk memfasilitasi pemahaman yang lebih baik tentang teknik-teknik yang diajarkan. Peserta akan mendapatkan sertifikat resmi. Pelatihan ini diajarkan oleh pengajar yang berpengalaman, termasuk Meike Lusye Karolus, S.Sos., M.A. dan Angela Frenzia Betyarini, S.S., M.A., yang memiliki latar belakang akademis dan profesional yang kuat di bidang komunikasi dan media.",
+        "deliverables": [
+          "Pelatihan komunikasi persuasif untuk berbagai tingkatan (Beginner, Intermediate, Advanced)",
+          "Materi interaktif dan simulasi situasi nyata di tempat kerja",
+          "Sertifikat resmi dari instruktur berpengalaman",
+          "Akses ke modul digital dan bahan pendukung pembelajaran"
+        ],
+        "benefits": [
+          "Peningkatan keterampilan komunikasi profesional dan persuasif",
+          "Pemahaman tentang etika dan citra diri dalam komunikasi",
+          "Kemampuan mengelola konflik dan membangun relasi kerja yang positif",
+          "Peningkatan kepercayaan diri saat berbicara di depan umum atau presentasi",
+          "Peningkatan reputasi dan kredibilitas di lingkungan kerja"
+        ]
+      }
+    },
+    "categories": {
+      "consulting": "Konsultasi",
+      "training": "Pelatihan"
+    }
+  }
+  

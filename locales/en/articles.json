@@ -1,0 +1,23 @@
+{
+    "hero": {
+      "title": "Articles",
+      "subtitle": "Discover the latest articles and insights from the ANTLIA team"
+    },
+    "search": {
+      "placeholder": "Search articles..."
+    },
+    "viewToggle": {
+      "gridLabel": "Grid View",
+      "listLabel": "List View"
+    },
+    "status": {
+      "loading": "Loading articles...",
+      "noArticles": "No articles found"
+    },
+    "readingTime": "{{count}} min read",
+    "toast": {
+      "errorTitle": "Error",
+      "errorMessage": "Failed to fetch article data: {{message}}"
+    }
+  }
+  

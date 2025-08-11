@@ -1,0 +1,49 @@
+{
+    "hero": {
+      "title": "Professional Services",
+      "subtitle": "Consulting and technology implementation services by an experienced expert team"
+    },
+    "featuredServices": {
+      "subtitle": "Our Services",
+      "title": "Featured Services",
+      "description": "ANTLIA's professional services to help your business' digital transformation"
+    },
+    "allServices": {
+      "subtitle": "Professional Services",
+      "title": "All Services",
+      "description": "Explore a variety of professional services to support your business' technology needs"
+    },
+    "cta": {
+      "title": "Need a Custom Solution?",
+      "description": "The ANTLIA team is ready to help you with solutions tailored to your specific business needs. Contact us now for a free consultation.",
+      "contactUs": "Contact Us",
+      "contactWhatsApp": "Contact via WhatsApp",
+      "imageAlt": "Digital Transformation"
+    },
+    "services": {
+      "it-consulting": {
+        "name": "IT Consulting",
+        "shortDescription": "IT consulting for efficient IT infrastructure solutions, system management, and technology implementation."
+      },
+      "business-operations-consulting": {
+        "name": "Business Operations Consulting",
+        "shortDescription": "Improve business performance through the development of operational processes and organizational capacity."
+      },
+      "excel-training-course": {
+        "name": "Excel Training Course",
+        "shortDescription": "Excel training to improve data analysis skills and professional report preparation."
+      },
+      "workplace-communication-training": {
+        "name": "Workplace Communication Training",
+        "shortDescription": "Professional communication training to improve persuasive abilities in the workplace."
+      }
+    },
+    "categories": {
+      "consulting": "Consulting",
+      "training": "Training"
+    },
+    "common": {
+      "viewDetails": "View Details"
+    }
+  }
+  

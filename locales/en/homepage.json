@@ -1,0 +1,50 @@
+{
+    "value_prop": {
+      "subtitle": "Why Choose Us",
+      "title": "Why Choose ANTLIA?",
+      "description": "ANTLIA provides the best technology solutions to help your business grow in the digital age. We combine technical expertise with deep business understanding.",
+      "features": {
+        "feature1_title": "Technical Expertise",
+        "feature1_description": "Our expert team has extensive experience in various latest technologies",
+        "feature2_title": "Custom Solutions",
+        "feature2_description": "We provide solutions tailored to your business needs",
+        "feature3_title": "24/7 Support",
+        "feature3_description": "Technical support is available 24 hours to keep your business running smoothly"
+      }
+    },
+    "products": {
+      "subtitle": "Our Products",
+      "title": "Featured Products",
+      "description": "The best software solutions to help your business grow and compete",
+      "product1_desc": "A comprehensive customer management system with automation and analytics features",
+      "product2_desc": "An integrated Enterprise Resource Planning solution for business operational efficiency",
+      "product3_desc": "A data analytics platform to turn raw data into valuable business insights",
+      "view_details_link": "View Details",
+      "view_all_products_button": "View All Products"
+    },
+    "cta": {
+      "title": "Ready for Digital Transformation?",
+      "description": "Let's discuss how ANTLIA can help your business grow through innovative and efficient technology solutions.",
+      "contact_button": "Contact Us",
+      "image_alt": "Digital Transformation"
+    },
+    "articles": {
+      "subtitle": "Latest Updates",
+      "title": "Latest Articles",
+      "description": "Find the latest information about technology and digital innovation on the ANTLIA blog.",
+      "read_more_link": "Read more",
+      "no_articles_message": "No articles have been published yet",
+      "view_all_articles_button": "View All Articles"
+    },
+    "team": {
+      "member1_bio": "Has 15 years of experience in the information technology industry with a focus on enterprise solutions.",
+      "member2_bio": "Technology expert specializing in cloud computing and distributed systems architecture.",
+      "member3_bio": "A senior developer with expertise in various programming languages and modern frameworks.",
+      "member4_bio": "Experienced UX designer focused on creating intuitive and efficient digital experiences."
+    },
+    "article_fetch_error": {
+      "title": "Error",
+      "description": "Failed to fetch latest articles"
+    }
+  }
+  

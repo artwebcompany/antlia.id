@@ -1,0 +1,29 @@
+{
+    "page_hero": {
+      "title": "Produk Unggulan",
+      "subtitle": "Solusi digital terbaik yang dirancang khusus untuk memenuhi kebutuhan bisnis Anda"
+    },
+    "featured_products": {
+      "subtitle": "antlia Produk",
+      "title": "Semua Produk Kami",
+      "description": "Produk-produk unggulan kami yang telah terbukti memberikan nilai tambah signifikan bagi bisnis"
+    },
+    "product_cards": {
+      "view_detail": "Lihat Detail"
+    },
+    "cta_section": {
+      "title": "Tidak Menemukan Produk yang Anda Cari?",
+      "description": "ANTLIA juga menyediakan solusi kustom yang dirancang khusus untuk memenuhi kebutuhan spesifik bisnis Anda. Tim pengembangan kami siap bekerja sama dengan Anda untuk menciptakan solusi yang tepat.",
+      "contact_us": "Hubungi Kami",
+      "view_custom_services": "Lihat Layanan Kustom"
+    },
+    "product_descriptions": {
+      "antlia_crm": "Sistem manajemen pelanggan komprehensif dengan fitur otomatisasi dan analitik",
+      "antlia_pos": "Sistem kasir digital yang memudahkan transaksi jual beli secara langsung maupun online.",
+      "antlia_erp": "Sistem Enterprise Resource Planning untuk mengintegrasikan dan mengotomatisasi proses bisnis perusahaan.",
+      "antlia_wms": "Sistem manajemen gudang untuk meningkatkan efisiensi operasional dengan integrasi teknologi barcode/RFID.",
+      "antlia_tms": "Sistem manajemen transportasi untuk optimasi logistik, pengurangan biaya, dan peningkatan kepuasan pelanggan.",
+      "antlia_iot": "Solusi Internet of Things untuk pemantauan real-time aset dan proses bisnis melalui dashboard cloud.",
+      "antlia_hrm": "Sistem manajemen sumber daya manusia untuk otomatisasi rekrutmen, penggajian, pelatihan, dan kinerja karyawan."
+    }
+  }

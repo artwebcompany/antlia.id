@@ -1,0 +1,123 @@
+{
+  "aboutPage": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Get to know more about the history, vision, mission, and values that drive our innovation"
+    },
+    "history": {
+      "subtitle": "Our Story",
+      "title": "About ANTLIA",
+      "p1": "Inspired by the Antlia constellation, which means “the pump”, we are here as a driving force for innovation in the digital world. This philosophy aligns with our vision and mission: to support global economic growth through technology solutions that are efficient, cost-effective, and environmentally friendly.",
+      "p2": "Through products such as POS, ERP, WMS, TMS, HRM, CRM, IoT, and 3PL, we present an interconnected system to build a transparent, collaborative, and sustainable supply chain. Not only that, Antlia also has services such as Business Operational Consulting, Excel Training, and Workplace Communication Training.",
+      "p3": "As part of Techno King, Antlia is ready to grow with you with technology that is relevant, impactful, and has long-term value.",
+      "experienceYears": "10+",
+      "experienceLabel": "Years of Experience"
+    },
+    "timeline": {
+      "subtitle": "Our Journey",
+      "title": "Our Journey Milestones",
+      "description": "ANTLIA's journey in bringing the best technology solutions to Indonesia",
+      "milestone1": {
+        "year": "2013",
+        "title": "Establishment of ANTLIA",
+        "description": "ANTLIA was founded as an IT consulting company focusing on web application development."
+      },
+      "milestone2": {
+        "year": "2015",
+        "title": "Service Expansion",
+        "description": "Expanded services to mobile application development and cloud solutions."
+      },
+      "milestone3": {
+        "year": "2017",
+        "title": "Opening of Regional Office",
+        "description": "Opened the first regional office in Surabaya to serve clients in Eastern Indonesia."
+      },
+      "milestone4": {
+        "year": "2019",
+        "title": "First Product Launch",
+        "description": "Launched ANTLIA CRM, the first software product for customer relationship management."
+      },
+      "milestone5": {
+        "year": "2021",
+        "title": "Achievement of 100+ Clients",
+        "description": "Reached a milestone of 100+ clients from various industries across Indonesia."
+      },
+      "milestone6": {
+        "year": "2023",
+        "title": "Digital Transformation Hub",
+        "description": "Launched the Digital Transformation Hub to support companies on their digital transformation journey."
+      }
+    },
+    "visionMission": {
+      "subtitle": "Our Purpose",
+      "title": "Vision & Mission",
+      "description": "Our commitment to a better future through technology",
+      "visionTitle": "Our Vision",
+      "visionText": "To support global economic growth by providing innovative supply chain technology solutions that increase productivity, reduce costs, and minimize environmental impact.",
+      "missionTitle": "Our Mission",
+      "missionText": "To deliver innovative, effective, and tailored technology solutions to help businesses grow in a competitive digital era.",
+      "missionItem1": "Develop and implement advanced technology",
+      "missionItem2": "Build a strong collaborative ecosystem with industry partners",
+      "missionItem3": "Provide a comprehensive technology platform",
+      "missionItem4": "Encourage the implementation of sustainable technology in the supply chain",
+      "missionItem5": "Build a transparent and traceable supply chain",
+      "missionItem6": "Make a positive contribution to society"
+    },
+    "coreValues": {
+      "subtitle": "Guiding Principles",
+      "title": "Our Core Values",
+      "description": "The principles that form the foundation of our every decision and action",
+      "value1": {
+        "value": "Innovation",
+        "description": "We are always looking for new and better ways to solve problems and create value."
+      },
+      "value2": {
+        "value": "Integrity",
+        "description": "Honesty and transparency are the basis of every interaction with clients, partners, and among teams."
+      },
+      "value3": {
+        "value": "Collaboration",
+        "description": "We believe that the best results come from teamwork and strong partnerships."
+      },
+      "value4": {
+        "value": "Excellence",
+        "description": "We are committed to delivering the highest quality in every aspect of our work."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Meet The Experts",
+      "description": "Supported by experienced professionals dedicated to giving their best",
+      "member1": {
+        "name": "Ahmad Rasyid",
+        "position": "CEO & Founder",
+        "bio": "Has 15 years of experience in the information technology industry with a focus on enterprise solutions."
+      },
+      "member2": {
+        "name": "Siti Nuraini",
+        "position": "CTO",
+        "bio": "A technology expert specializing in cloud computing and distributed systems architecture."
+      },
+      "member3": {
+        "name": "Budi Santoso",
+        "position": "Lead Developer",
+        "bio": "A senior developer with expertise in various modern programming languages and frameworks."
+      },
+      "member4": {
+        "name": "Maya Putri",
+        "position": "UX Design Lead",
+        "bio": "An experienced UX designer focused on creating intuitive and efficient digital experiences."
+      }
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "Collaborating with various leading companies to provide the best solutions"
+    },
+    "cta": {
+      "title": "Be Part of Our Journey",
+      "description": "Are you looking for a technology solution for your business or interested in joining our team? Contact us now to start a conversation.",
+      "contactButton": "Contact Us",
+      "careersButton": "Careers at ANTLIA"
+    }
+  }
+}

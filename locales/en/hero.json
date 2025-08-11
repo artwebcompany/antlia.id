@@ -1,0 +1,33 @@
+{
+    "slides": [
+      {
+        "id": 1,
+        "title": "Optimize Your Supply Chain with Cutting-Edge Technology",
+        "subtitle": "Antlia by Techno King",
+        "description": "Complete digital solutions to enhance the efficiency, transparency, and sustainability of your supply chain.",
+        "bgImage": "/assets/hero-bg.jpg",
+        "buttonText": "Learn More",
+        "buttonLink": "/solutions"
+      },
+      {
+        "id": 2,
+        "title": "Latest Technology for Your Business",
+        "subtitle": "Antlia by Techno King",
+        "description": "We combine the latest technology with business strategy to deliver effective and leading solutions.",
+        "bgImage": "/assets/hero-bg-alt.jpg",
+        "buttonText": "Our Services",
+        "buttonLink": "/products-services"
+      },
+      {
+        "id": 3,
+        "title": "The Right Partner for Growth",
+        "subtitle": "Antlia by Techno King",
+        "description": "ANTLIA's expert team is ready to support your business's digital transformation with comprehensive and measurable solutions.",
+        "bgImage": "/assets/about-hero-bg.jpg",
+        "buttonText": "About Us",
+        "buttonLink": "/about-us"
+      }
+    ],
+    "contactButton": "Contact Us"
+  }
+  

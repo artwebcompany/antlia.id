@@ -1,0 +1,101 @@
+{
+    "clientsPage": {
+      "hero": {
+        "title": "Klien Kami",
+        "subtitle": "Cerita sukses dari klien yang telah mempercayai layanan ANTLIA"
+      },
+      "featuredClients": {
+        "subtitle": "Mitra Kami",
+        "title": "Klien Unggulan",
+        "description": "Perusahaan terkemuka yang mempercayakan transformasi digital mereka kepada ANTLIA",
+        "clients": [
+          {
+            "name": "Bank Nusantara",
+            "industry": "Perbankan & Keuangan"
+          },
+          {
+            "name": "Tech Innovations",
+            "industry": "Teknologi"
+          },
+          {
+            "name": "MegaRetail Group",
+            "industry": "Ritel & E-commerce"
+          },
+          {
+            "name": "Indo Manufactur",
+            "industry": "Manufaktur"
+          }
+        ]
+      },
+      "caseStudies": {
+        "subtitle": "Kisah Sukses",
+        "title": "Studi Kasus",
+        "description": "Kisah sukses transformasi digital bersama klien kami",
+        "resultLabel": "Hasil:",
+        "button": "Lihat Semua Studi Kasus",
+        "studies": [
+          {
+            "title": "Penggunaan Sistem ERP",
+            "description": "Modernisasi sistem bisnis LEBIH MUDAH",
+            "result": "30% peningkatan efisiensi operasional",
+            "clientName": "Techno",
+            "image": "/assets/product-3.jpg",
+            "industry": "Perbankan & Keuangan"
+          },
+          {
+            "title": "System POS",
+            "description": "Implementasi SISTEM POS yang berdampak Positif",
+            "result": "45% peningkatan penjualan online",
+            "clientName": "antlia",
+            "image": "/assets/product-2.jpg",
+            "industry": "Ritel & E-commerce"
+          },
+          {
+            "title": "Smart Factory Implementation",
+            "description": "IMPLEMENTASI TERBAIK",
+            "result": "25% pengurangan biaya operasional",
+            "clientName": "IKN",
+            "image": "/assets/product-4.jpg",
+            "industry": "Manufaktur"
+          }
+        ]
+      },
+      "testimonials": {
+        "subtitle": "Ulasan Klien",
+        "title": "Testimoni",
+        "description": "Apa yang dikatakan klien kami tentang pengalaman bekerja sama dengan ANTLIA",
+        "testimonialsList": [
+          {
+            "name": "Elia Fernandoo",
+            "position": "CIO",
+            "company": "Bank Nusantara",
+            "content": "ANTLIA memahami kebutuhan bisnis kami dengan sangat baik dan menghadirkan solusi yang jauh melampaui harapan. Sistem yang mereka kembangkan telah menjadi tulang punggung operasi kami."
+          },
+          {
+            "name": "Eva Ria Damanik",
+            "position": "CIO",
+            "company": "Bank Nusantara",
+            "content": "ANTLIA memahami kebutuhan bisnis kami dengan sangat baik dan menghadirkan solusi yang jauh melampaui harapan. Sistem yang mereka kembangkan telah menjadi tulang punggung operasi kami."
+          },
+          {
+            "name": "Fernando Girsang",
+            "position": "CIO",
+            "company": "Bank Nusantara",
+            "content": "ANTLIA memahami kebutuhan bisnis kami dengan sangat baik dan menghadirkan solusi yang jauh melampaui harapan. Sistem yang mereka kembangkan telah menjadi tulang punggung operasi kami."
+          }
+        ]
+      },
+      "allClients": {
+        "subtitle": "Daftar Klien Kami",
+        "title": "Semua Klien",
+        "description": "Berbagai perusahaan dari berbagai industri yang telah bekerja sama dengan ANTLIA"
+      },
+      "cta": {
+        "title": "Bergabunglah dengan Klien Kami",
+        "description": "Mulai perjalanan transformasi digital bersama ANTLIA dan rasakan perbedaannya. Tim kami siap membantu Anda menavigasi tantangan dan memanfaatkan peluang era digital.",
+        "contactButton": "Hubungi Kami",
+        "consultationButton": "Konsultasi Gratis"
+      }
+    }
+  }
+  

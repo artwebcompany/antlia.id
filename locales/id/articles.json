@@ -1,0 +1,23 @@
+{
+    "hero": {
+      "title": "Artikel",
+      "subtitle": "Temukan artikel terbaru dan wawasan dari tim ANTLIA"
+    },
+    "search": {
+      "placeholder": "Cari artikel..."
+    },
+    "viewToggle": {
+      "gridLabel": "Tampilan Grid",
+      "listLabel": "Tampilan List"
+    },
+    "status": {
+      "loading": "Memuat artikel...",
+      "noArticles": "Tidak ada artikel yang ditemukan"
+    },
+    "readingTime": "{{count}} min read",
+    "toast": {
+      "errorTitle": "Error",
+      "errorMessage": "Gagal mengambil data artikel: {{message}}"
+    }
+  }
+  
