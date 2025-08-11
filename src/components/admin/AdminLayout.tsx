@@ -110,14 +110,17 @@ const AdminLayout = () => {
           isMobile ? (isSidebarOpen ? "translate-x-0" : "-translate-x-full") : "translate-x-0"
         } transition-transform duration-300 ease-in-out fixed z-40 bg-white min-h-screen w-64 border-r border-gray-200 flex flex-col`}
       >
-        {/* Logo */}
-        <div className="px-6 py-6 flex items-center border-b border-gray-200">
+       {/* Logo */}
+        <div className="px-3 py-3.5 flex items-center border-b border-gray-200">
           <Link to="/admin/dashboard" className="flex items-center">
-            <h1 className="text-xl font-bold bg-gradient-to-r from-antlia-blue to-antlia-cyan bg-clip-text text-transparent">
-              ANTLIA ADMIN
-            </h1>
+            <img
+              src="/assets/logo.png"
+              alt="Antlia Admin Logo"
+              className="h-10 w-auto"
+            />
           </Link>
         </div>
+
 
         {/* Navigation */}
         <nav className="py-6 flex flex-col flex-1">

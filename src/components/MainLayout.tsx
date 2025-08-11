@@ -9,12 +9,10 @@ const MainLayout = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading for 1.5 seconds
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1500);
 
-    // Cleanup timeout
     return () => clearTimeout(timer);
   }, []);
 

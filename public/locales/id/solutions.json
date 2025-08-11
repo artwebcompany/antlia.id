@@ -1,0 +1,108 @@
+{
+  "hero": {
+    "title": "Solusi Inovatif untuk Masa Depan Digital",
+    "subtitle": "Kami menyediakan solusi teknologi yang disesuaikan untuk mengubah bisnis Anda dan mendorong pertumbuhan."
+  },
+  "industrySolutions": {
+    "subtitle": "Solusi Industri",
+    "title": "Penerapan Teknologi Digital Terkini di Berbagai Industri",
+    "description": "Kami memahami tantangan unik di setiap sektor dan menawarkan solusi khusus untuk membantu bisnis Anda beradaptasi dan berkembang.",
+    "cards": [
+      {
+        "title": "Fintech & Perbankan",
+        "description": "Pengembangan sistem perbankan digital yang aman dan efisien."
+      },
+      {
+        "title": "Manufaktur & Logistik",
+        "description": "Otomatisasi proses produksi dan manajemen rantai pasok."
+      },
+      {
+        "title": "E-commerce & Ritel",
+        "description": "Membangun platform perdagangan online yang intuitif dan skalabel."
+      },
+      {
+        "title": "Kesehatan & Pendidikan",
+        "description": "Solusi digital untuk meningkatkan layanan dan aksesibilitas."
+      }
+    ]
+  },
+  "digitalTransformation": {
+    "subtitle": "Transformasi Digital",
+    "title": "Memimpin Revolusi Digital untuk Keunggulan Kompetitif",
+    "description": "Berdayakan bisnis Anda dengan solusi digital yang transformatif, mulai dari otomatisasi hingga analisis data cerdas.",
+    "featureCards": [
+      {
+        "title": "Automasi Proses Bisnis",
+        "description": "Sederhanakan operasi dan kurangi pekerjaan manual dengan otomatisasi khusus."
+      },
+      {
+        "title": "Strategi IT & Konsultasi",
+        "description": "Panduan ahli untuk merancang dan mengimplementasikan arsitektur IT yang solid."
+      },
+      {
+        "title": "Analitik Data & AI",
+        "description": "Manfaatkan data untuk wawasan yang dapat ditindaklanjuti dan keputusan bisnis yang lebih cerdas."
+      }
+    ]
+  },
+  "methodology": {
+    "subtitle": "Metodologi Kami",
+    "title": "Pendekatan Kami untuk Setiap Proyek",
+    "description": "Kami mengikuti proses yang terstruktur dan transparan untuk memastikan keberhasilan dan kepuasan klien di setiap tahap proyek.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "description": "Memahami tujuan bisnis dan tantangan Anda secara mendalam."
+      },
+      {
+        "title": "Strategi",
+        "description": "Merancang peta jalan yang jelas untuk mencapai tujuan Anda."
+      },
+      {
+        "title": "Desain",
+        "description": "Menciptakan antarmuka yang intuitif dan pengalaman pengguna yang luar biasa."
+      },
+      {
+        "title": "Pengembangan",
+        "description": "Membangun solusi yang kuat dan skalabel dengan teknologi terbaru."
+      },
+      {
+        "title": "Peluncuran & Dukungan",
+        "description": "Meluncurkan produk Anda dan memberikan dukungan berkelanjutan."
+      }
+    ]
+  },
+  "businessOutcomes": {
+    "subtitle": "Hasil Bisnis",
+    "title": "Mengubah Investasi Teknologi Menjadi Hasil Terukur",
+    "description": "Solusi kami tidak hanya tentang teknologi, tetapi juga tentang menciptakan nilai nyata dan pertumbuhan bisnis.",
+    "metrics": [
+      {
+        "metric": "30%",
+        "title": "Peningkatan Efisiensi",
+        "description": "Otomatisasi proses bisnis yang berulang."
+      },
+      {
+        "metric": "20%",
+        "title": "Penghematan Biaya",
+        "description": "Mengurangi biaya operasional melalui sistem yang efisien."
+      },
+      {
+        "metric": "40%",
+        "title": "Peningkatan Produktivitas",
+        "description": "Memberdayakan tim Anda dengan alat yang lebih baik."
+      },
+      {
+        "metric": "100%",
+        "title": "Kepuasan Pelanggan",
+        "description": "Menciptakan pengalaman pelanggan yang lebih baik dan lebih mulus."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Siap untuk Transformasi Digital?",
+    "description": "Hubungi tim ahli kami untuk mendiskusikan bagaimana kami dapat membantu bisnis Anda berkembang di era digital.",
+    "consultationButton": "Jadwalkan Konsultasi",
+    "whatsappButton": "Hubungi via WhatsApp"
+  }
+}

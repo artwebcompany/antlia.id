@@ -1,0 +1,36 @@
+{
+    "newsletter": {
+      "title": "Dapatkan Update Terbaru",
+      "description": "Berlangganan newsletter kami untuk mendapatkan informasi terbaru tentang teknologi dan layanan kami.",
+      "placeholder": "Masukkan email Anda",
+      "button": "Berlangganan"
+    },
+    "companyInfo": {
+      "description": "Menyediakan solusi teknologi inovatif untuk membantu bisnis Anda berkembang di era digital."
+    },
+    "menu": {
+      "title": "Menu",
+      "home": "Beranda",
+      "productsServices": "Produk & Layanan",
+      "aboutUs": "Tentang Kami",
+      "solutions": "Solusi",
+      "clients": "Klien",
+      "articles": "Artikel",
+      "manageArticles": "Kelola Artikel",
+      "contact": "Kontak",
+      "otherWebsite": "Website Lain"
+    },
+    "contactInfo": {
+      "title": "Hubungi Kami",
+      "address": "The Avani Nittaya, BSD City, \nCisauk, Banten, Tangerang",
+      "email": "hotmian@technokingindonesia.com",
+      "phone": "+62 858-4661-2211‬",
+      "whatsappButton": "Hubungi via WhatsApp"
+    },
+    "copyright": "Seluruh hak cipta dilindungi.",
+    "legal": {
+      "privacyPolicy": "Kebijakan Privasi",
+      "termsOfService": "Syarat & Ketentuan"
+    }
+  }
+  

@@ -9,9 +9,8 @@ import FeatureCard from "@/components/FeatureCard";
 
 const PlaceholderPage = () => {
   const location = useLocation();
-  const path = location.pathname.substring(1); // Remove leading slash
+  const path = location.pathname.substring(1); 
   
-  // Configure page based on path
   const pageConfig = {
     "tentang-kami": {
       title: "Tentang",
@@ -47,7 +46,6 @@ const PlaceholderPage = () => {
   };
   
   useEffect(() => {
-    // Animate elements on scroll
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     
     const observer = new IntersectionObserver((entries) => {
@@ -66,7 +64,6 @@ const PlaceholderPage = () => {
     };
   }, []);
 
-  // Render content based on the current path
   const renderContent = () => {
     switch (content) {
       case "tentang-kami":

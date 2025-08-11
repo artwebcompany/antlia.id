@@ -12,7 +12,6 @@ interface FeatureCardProps {
 }
 
 const FeatureCard = ({ title, description, icon, delay = 0 }: FeatureCardProps) => {
-  // Get the specific icon component from Lucide icons
   const IconComponent = LucideIcons[icon] as LucideIcon;
   
   return (

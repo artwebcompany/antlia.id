@@ -1,0 +1,50 @@
+{
+    "value_prop": {
+      "subtitle": "Mengapa Memilih Kami",
+      "title": "Mengapa Memilih ANTLIA?",
+      "description": "ANTLIA menyediakan solusi teknologi terbaik untuk membantu bisnis Anda berkembang di era digital. Kami menggabungkan keahlian teknologi dengan pemahaman bisnis yang mendalam.",
+      "features": {
+        "feature1_title": "Keahlian Teknis",
+        "feature1_description": "Tim ahli kami memiliki pengalaman luas dalam berbagai teknologi terkini",
+        "feature2_title": "Solusi Kustom",
+        "feature2_description": "Memiliki solusi yang disesuaikan dengan kebutuhan bisnis Anda",
+        "feature3_title": "Dukungan 24/7",
+        "feature3_description": "Layanan teknis tersedia 24 jam agar bisnis Anda berjalan lancar"
+      }
+    },
+    "products": {
+      "subtitle": "Produk Kami",
+      "title": "Produk Unggulan",
+      "description": "Solusi perangkat lunak terbaik untuk membantu bisnis Anda berkembang dan bersaing",
+      "product1_desc": "Sistem manajemen pelanggan komprehensif dengan fitur otomatisasi dan analitik",
+      "product2_desc": "Solusi Enterprise Resource Planning terintegrasi untuk efisiensi operasional bisnis",
+      "product3_desc": "Platform analitik data untuk mengubah data mentah menjadi wawasan bisnis yang berharga",
+      "view_details_link": "Lihat Detail",
+      "view_all_products_button": "Lihat Semua Produk"
+    },
+    "cta": {
+      "title": "Siap untuk Transformasi Digital?",
+      "description": "Mari diskusikan bagaimana ANTLIA dapat membantu bisnis Anda berkembang melalui solusi teknologi yang inovatif dan efisien.",
+      "contact_button": "Hubungi Kami",
+      "image_alt": "Transformasi Digital"
+    },
+    "articles": {
+      "subtitle": "Pembaruan Terbaru",
+      "title": "Artikel Terbaru",
+      "description": "Temukan informasi terbaru seputar teknologi dan inovasi digital di blog ANTLIA.",
+      "read_more_link": "Baca selengkapnya",
+      "no_articles_message": "Belum ada artikel yang dipublikasikan",
+      "view_all_articles_button": "Lihat Semua Artikel"
+    },
+    "team": {
+      "member1_bio": "Memiliki pengalaman 15 tahun di industri teknologi informasi dengan fokus pada solusi enterprise.",
+      "member2_bio": "Ahli teknologi dengan spesialisasi di cloud computing dan arsitektur sistem terdistribusi.",
+      "member3_bio": "Pengembang senior dengan keahlian di berbagai bahasa pemrograman dan framework modern.",
+      "member4_bio": "Desainer UX berpengalaman dengan fokus pada menciptakan pengalaman digital yang intuitif dan efisien."
+    },
+    "article_fetch_error": {
+      "title": "Error",
+      "description": "Gagal mengambil artikel terbaru"
+    }
+  }
+  

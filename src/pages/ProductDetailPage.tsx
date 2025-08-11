@@ -527,7 +527,6 @@ const products: ProductDetail[] = [
       "Penyimpanan": "Tidak Terbatas (berdasarkan paket langganan)"
     },
   }
-  // Add more product details as needed
 ];
 
 const ProductDetailPage = () => {
@@ -536,14 +535,11 @@ const ProductDetailPage = () => {
   
   useEffect(() => {
     if (!product) {
-      // Handle product not found
       return;
     }
     
-    // Scroll to top on page load
     window.scrollTo(0, 0);
     
-    // Animate elements on scroll
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     
     const observer = new IntersectionObserver((entries) => {

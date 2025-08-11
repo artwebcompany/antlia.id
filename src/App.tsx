@@ -22,6 +22,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 import SolutionsPage from "./pages/SolutionsPage";
 import ClientsPage from "./pages/ClientsPage";
 import ContactPage from "./pages/ContactPage";
+import './i18n';
 
 const queryClient = new QueryClient();
 

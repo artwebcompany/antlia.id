@@ -1,9 +1,9 @@
-
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useTranslation } from "react-i18next";
 
 interface Slide {
   id: number;
@@ -15,39 +15,11 @@ interface Slide {
   buttonLink: string;
 }
 
-const slides: Slide[] = [
-  {
-    id: 1,
-    title: "Optimalkan Rantai Pasok Anda dengan Teknologi Terdepan",
-    subtitle: "Antlia by Techno King",
-    description: "Solusi digital lengkap untuk meningkatkan efisiensi, transparansi, dan keberlanjutan rantai pasok Anda",
-    bgImage: "/assets/hero-bg.jpg",
-    buttonText: "Pelajari",
-    buttonLink: "/solusi"
-  },
-  {
-    id: 2,
-    title: "Teknologi Terkini untuk Bisnis Anda",
-    subtitle: "Antlia by Techno King",
-    description: "Kami menggabungkan teknologi terbaru dengan strategi bisnis untuk menghadirkan solusi yang efektif dan terdepan.",
-    bgImage: "/assets/hero-bg-alt.jpg", 
-    buttonText: "Layanan Kami",
-    buttonLink: "/produk-layanan"
-  },
-  {
-    id: 3,
-    title: "Partner Tepat untuk Pertumbuhan",
-    subtitle: "Antlia by Techno King",
-    description: "Tim ahli ANTLIA siap mendukung transformasi digital bisnis Anda dengan solusi yang komprehensif dan terukur.",
-    bgImage: "/assets/about-hero-bg.jpg",
-    buttonText: "Tentang Kami",
-    buttonLink: "/tentang-kami"
-  }
-];
-
 const HeroCarousel = () => {
+  const { t } = useTranslation("hero");
   const isMobile = useIsMobile();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const slides: Slide[] = t("slides", { returnObjects: true }) as Slide[] || [];
   
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -58,12 +30,18 @@ const HeroCarousel = () => {
   };
   
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 8000);
-    
-    return () => clearInterval(interval);
-  }, []);
+    if (slides.length > 0) {
+      const interval = setInterval(() => {
+        nextSlide();
+      }, 8000);
+      
+      return () => clearInterval(interval);
+    }
+  }, [slides, currentSlide]); 
+
+  if (!Array.isArray(slides) || slides.length === 0) {
+    return null; 
+  }
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
@@ -118,7 +96,7 @@ const HeroCarousel = () => {
                     <Link to={slide.buttonLink}>{slide.buttonText}</Link>
                   </Button>
                   <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
-                    <Link to="/kontak">Hubungi Kami</Link>
+                    <Link to="/kontak">{t("contactButton")}</Link>
                   </Button>
                 </div>
               </div>

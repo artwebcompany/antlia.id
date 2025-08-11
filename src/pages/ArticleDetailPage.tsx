@@ -46,12 +46,11 @@ const ArticleDetailPage = () => {
             coverImage: data.cover_image,
             status: data.status,
             readingTime: data.reading_time,
-            images: data.images || [] // Make sure to include images
+            images: data.images || [] 
           });
         }
       } catch (error: any) {
         if (error.code === 'PGRST116') {
-          // Not found, handle silently as we'll show a not found message
         } else {
           toast({
             title: "Error",
@@ -101,100 +100,100 @@ const ArticleDetailPage = () => {
       </Link>
       
       <article>
-        <header className="mb-8">
-          <div className="flex items-center space-x-2 text-sm text-gray-600 mb-2">
-            {article.category && (
-              <>
-                <span className="bg-antlia-blue/10 text-antlia-blue px-3 py-1 rounded-full">
-                  {article.category}
-                </span>
-                <span>•</span>
-              </>
-            )}
-            <time dateTime={article.publishedAt}>
-              {new Date(article.publishedAt).toLocaleDateString('id-ID', { 
-                day: 'numeric',
-                month: 'long',
-                year: 'numeric'
-              })}
-            </time>
-            {article.readingTime && (
-              <>
-                <span>•</span>
-                <span>{article.readingTime} min read</span>
-              </>
-            )}
-          </div>
-          
-          <h1 className="text-4xl font-bold mb-4">{article.title}</h1>
-          
-          <div className="flex items-center">
-            <div className="w-10 h-10 bg-antlia-purple rounded-full flex items-center justify-center text-white">
-              {article.authorPhoto ? (
-                <img 
-                  src={article.authorPhoto} 
-                  alt={article.author} 
-                  className="w-full h-full object-cover rounded-full"
-                />
-              ) : (
-                article.author.charAt(0)
-              )}
-            </div>
-            <div className="ml-3">
-              <p className="font-medium">{article.author}</p>
-              {article.authorEmail && (
-                <p className="text-sm text-gray-600">{article.authorEmail}</p>
-              )}
-            </div>
-          </div>
-        </header>
-        
-        {article.coverImage && (
-          <div className="mb-8">
+  <header className="mb-8">
+    <div className="flex items-center space-x-2 text-sm text-gray-600 mb-2">
+      {article.category && (
+        <>
+          <span className="bg-antlia-blue/10 text-antlia-blue px-3 py-1 rounded-full">
+            {article.category}
+          </span>
+          <span>•</span>
+        </>
+      )}
+      <time dateTime={article.publishedAt}>
+        {new Date(article.publishedAt).toLocaleDateString('id-ID', { 
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric'
+        })}
+      </time>
+      {article.readingTime && (
+        <>
+          <span>•</span>
+          <span>{article.readingTime} min read</span>
+        </>
+      )}
+    </div>
+
+    <h1 className="text-4xl font-bold mb-4">{article.title}</h1>
+
+    <div className="flex items-center">
+      <div className="w-10 h-10 bg-antlia-purple rounded-full flex items-center justify-center text-white overflow-hidden">
+        {article.authorPhoto ? (
+          <img 
+            src={article.authorPhoto} 
+            alt={article.author} 
+            className="w-full h-full object-contain"
+          />
+        ) : (
+          article.author.charAt(0)
+        )}
+      </div>
+      <div className="ml-3">
+        <p className="font-medium">{article.author}</p>
+        {article.authorEmail && (
+          <p className="text-sm text-gray-600">{article.authorEmail}</p>
+        )}
+      </div>
+    </div>
+  </header>
+
+  {article.coverImage && (
+    <div className="mb-8 relative w-full aspect-[16/9] bg-gray-100 rounded-lg overflow-hidden">
+      <img 
+        src={article.coverImage} 
+        alt={article.title} 
+        className="w-full h-full object-contain"
+      />
+    </div>
+  )}
+
+  <div 
+    className="prose prose-lg max-w-none"
+    dangerouslySetInnerHTML={{ __html: article.content }}
+  />
+
+  {article.images && article.images.length > 0 && (
+    <div className="mt-10 mb-8">
+      <h3 className="text-2xl font-semibold mb-4">Galeri</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {article.images.map((imageUrl, index) => (
+          <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-md bg-gray-100">
             <img 
-              src={article.coverImage} 
-              alt={article.title} 
-              className="w-full h-auto max-h-[500px] object-cover rounded-lg"
+              src={imageUrl} 
+              alt={`${article.title} - Gambar ${index + 1}`}
+              className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
             />
           </div>
-        )}
-        
-        <div 
-          className="prose prose-lg max-w-none"
-          dangerouslySetInnerHTML={{ __html: article.content }}
-        />
-        
-        {/* Display article images in a gallery */}
-        {article.images && article.images.length > 0 && (
-          <div className="mt-10 mb-8">
-            <h3 className="text-2xl font-semibold mb-4">Galeri</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {article.images.map((imageUrl, index) => (
-                <div key={index} className="relative overflow-hidden rounded-lg shadow-md bg-gray-100">
-                  <img 
-                    src={imageUrl} 
-                    alt={`${article.title} - Gambar ${index + 1}`}
-                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-        
-        <footer className="mt-8 pt-8 border-t border-gray-200">
-          <div className="flex flex-wrap gap-2">
-            {article.keywords.map((keyword) => (
-              <span 
-                key={keyword} 
-                className="bg-antlia-light text-gray-700 px-3 py-1 rounded-full text-sm"
-              >
-                #{keyword}
-              </span>
-            ))}
-          </div>
-        </footer>
-      </article>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <footer className="mt-8 pt-8 border-t border-gray-200">
+    <div className="flex flex-wrap gap-2">
+      {article.keywords.map((keyword) => (
+        <span 
+          key={keyword} 
+          className="bg-antlia-light text-gray-700 px-3 py-1 rounded-full text-sm"
+        >
+          #{keyword}
+        </span>
+      ))}
+    </div>
+  </footer>
+</article>
+
     </div>
   );
 };

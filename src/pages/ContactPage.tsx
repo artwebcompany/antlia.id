@@ -3,8 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
 import PageHero from "@/components/PageHero";
+import { useTranslation } from "react-i18next";
 
 const ContactPage = () => {
+  const { t } = useTranslation("contact");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,7 +18,6 @@ const ContactPage = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   
   useEffect(() => {
-    // Animate elements on scroll
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     
     const observer = new IntersectionObserver((entries) => {
@@ -45,7 +46,6 @@ const ContactPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Prepare WhatsApp message
     const whatsappMessage = `Halo, saya ${formData.name} dari ${formData.company || 'tidak disebutkan'}.%0A%0A` +
       `Saya tertarik dengan layanan: ${formData.subject}%0A%0A` +
       `Detail kontak saya:%0A` +
@@ -53,10 +53,8 @@ const ContactPage = () => {
       `Telepon: ${formData.phone}%0A%0A` +
       `Pesan:%0A${formData.message}`;
     
-    // Open WhatsApp with the message
-    window.open(`https://wa.me/6287702770999?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/6285846612211?text=${whatsappMessage}`, '_blank');
     
-    // Reset form
     setFormSubmitted(true);
     setFormData({
       name: "",
@@ -67,7 +65,6 @@ const ContactPage = () => {
       company: ""
     });
     
-    // Reset submission status after 5 seconds
     setTimeout(() => {
       setFormSubmitted(false);
     }, 5000);
@@ -76,8 +73,8 @@ const ContactPage = () => {
   return (
     <>
       <PageHero 
-        title="Hubungi Kami" 
-        subtitle="Tim kami siap membantu Anda dengan pertanyaan dan kebutuhan Anda"
+        title={t("hero.title")} 
+        subtitle={t("hero.subtitle")}
         backgroundImage="/assets/kontak.jpg"
       />
       
@@ -88,10 +85,10 @@ const ContactPage = () => {
             {/* Contact Information */}
             <div className="lg:col-span-1 animate-on-scroll">
               <div className="mb-8">
-                <span className="subtitle block mb-2">Get in Touch</span>
-                <h2 className="text-xl font-bold mb-4">Informasi Kontak</h2>
+                <span className="subtitle block mb-2">{t("contactInfo.subtitle")}</span>
+                <h2 className="text-xl font-bold mb-4">{t("contactInfo.title")}</h2>
                 <p className="text-gray-600">
-                  Hubungi kami untuk konsultasi, informasi lebih lanjut, atau mulai kerjasama.
+                  {t("contactInfo.description")}
                 </p>
               </div>
               
@@ -102,10 +99,10 @@ const ContactPage = () => {
                       <Phone className="w-6 h-6 text-antlia-blue" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1">Telepon</h3>
-                      <p className="text-gray-600 mb-2">Produk (Pak Roni)</p>
-                      <a href="tel:+6287762877273" className="text-antlia-blue hover:underline">+62 87762877273</a>
-                      <p className="text-gray-600 mb-2">Training (Angela )</p>
+                      <h3 className="text-lg font-semibold mb-1">{t("contactInfo.phone.title")}</h3>
+                      <p className="text-gray-600 mb-2">{t("contactInfo.phone.productLabel")}</p>
+                      <a href="tel:+6285846612211" className="text-antlia-blue hover:underline">+62 85846612211</a>
+                      <p className="text-gray-600 mb-2">{t("contactInfo.phone.trainingLabel")}</p>
                       <a href="tel:+6287702770999" className="text-antlia-blue hover:underline">+62 87702770999</a>
                     </div>
                   </div>
@@ -119,10 +116,10 @@ const ContactPage = () => {
                       <Mail className="w-6 h-6 text-antlia-blue" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1">Email</h3>
-                      <p className="text-gray-600 mb-2">Produk </p>
+                      <h3 className="text-lg font-semibold mb-1">{t("contactInfo.email.title")}</h3>
+                      <p className="text-gray-600 mb-2">{t("contactInfo.email.productLabel")}</p>
                       <a href="mailto:hotmian@technokingindonesia.com" className="text-antlia-blue hover:underline">hotmian@technokingindonesia.com</a>
-                      <p className="text-gray-600 mb-2">training </p>
+                      <p className="text-gray-600 mb-2">{t("contactInfo.email.trainingLabel")}</p>
                       <a href="mailto:angela@techokingindonesia.com" className="text-antlia-blue hover:underline">angela@techokingindonesia.com</a>
                     </div>
                   </div>
@@ -136,11 +133,12 @@ const ContactPage = () => {
                       <MapPin className="w-6 h-6 text-antlia-blue" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1">Kantor Pusat</h3>
-                      <p className="text-gray-600 mb-2">Tangerang</p>
+                      <h3 className="text-lg font-semibold mb-1">{t("contactInfo.address.title")}</h3>
+                      <p className="text-gray-600 mb-2">{t("contactInfo.address.city")}</p>
                       <address className="text-gray-600 not-italic">
-                      The Avani Nittaya, BSD City,<br />
-                      Cisauk, Banten, Tangerang<br />
+                        {t("contactInfo.address.line1")}<br />
+                        {t("contactInfo.address.line2")}<br />
+                        {t("contactInfo.address.line3")}<br />
                       </address>
                     </div>
                   </div>
@@ -154,11 +152,11 @@ const ContactPage = () => {
                       <Clock className="w-6 h-6 text-antlia-blue" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1">Jam Kerja</h3>
+                      <h3 className="text-lg font-semibold mb-1">{t("contactInfo.hours.title")}</h3>
                       <div className="text-gray-600">
-                        <p className="mb-1">Senin - Jumat: 08:00 - 17:00</p>
-                        <p>Sabtu : 08:00 - 14.00</p>
-                        <p>Customer Services : 24/7</p>
+                        <p className="mb-1">{t("contactInfo.hours.weekday")}</p>
+                        <p>{t("contactInfo.hours.saturday")}</p>
+                        <p>{t("contactInfo.hours.customerService")}</p>
                       </div>
                     </div>
                   </div>
@@ -171,9 +169,9 @@ const ContactPage = () => {
               <Card>
                 <CardContent className="p-6 md:p-8">
                   <div className="mb-6">
-                    <h2 className="text-2xl font-bold mb-2">Kirim Pesan</h2>
+                    <h2 className="text-2xl font-bold mb-2">{t("form.title")}</h2>
                     <p className="text-gray-600">
-                      Isi formulir di bawah ini dan tim kami akan menghubungi Anda sesegera mungkin.
+                      {t("form.description")}
                     </p>
                   </div>
                   
@@ -181,9 +179,9 @@ const ContactPage = () => {
                     <div className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-start">
                       <CheckCircle className="text-green-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0" />
                       <div>
-                        <h3 className="font-semibold text-green-800">Pesan Terkirim!</h3>
+                        <h3 className="font-semibold text-green-800">{t("form.successTitle")}</h3>
                         <p className="text-green-700">
-                          Terima kasih telah menghubungi kami. Tim kami akan segera meninjau pesan Anda dan menghubungi Anda.
+                          {t("form.successMessage")}
                         </p>
                       </div>
                     </div>
@@ -191,7 +189,7 @@ const ContactPage = () => {
                     <form onSubmit={handleSubmit}>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div>
-                          <label htmlFor="name" className="block text-gray-700 font-medium mb-1">Nama Lengkap</label>
+                          <label htmlFor="name" className="block text-gray-700 font-medium mb-1">{t("form.nameLabel")}</label>
                           <input 
                             type="text" 
                             id="name" 
@@ -200,11 +198,11 @@ const ContactPage = () => {
                             onChange={handleChange}
                             required
                             className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-antlia-blue/50 focus:border-antlia-blue"
-                            placeholder="Masukkan nama lengkap"
+                            placeholder={t("form.namePlaceholder")}
                           />
                         </div>
                         <div>
-                          <label htmlFor="email" className="block text-gray-700 font-medium mb-1">Email</label>
+                          <label htmlFor="email" className="block text-gray-700 font-medium mb-1">{t("form.emailLabel")}</label>
                           <input 
                             type="email" 
                             id="email" 
@@ -213,14 +211,14 @@ const ContactPage = () => {
                             onChange={handleChange}
                             required
                             className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-antlia-blue/50 focus:border-antlia-blue"
-                            placeholder="contoh@email.com"
+                            placeholder={t("form.emailPlaceholder")}
                           />
                         </div>
                       </div>
                       
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div>
-                          <label htmlFor="phone" className="block text-gray-700 font-medium mb-1">Nomor Telepon</label>
+                          <label htmlFor="phone" className="block text-gray-700 font-medium mb-1">{t("form.phoneLabel")}</label>
                           <input 
                             type="tel" 
                             id="phone" 
@@ -229,11 +227,11 @@ const ContactPage = () => {
                             onChange={handleChange}
                             required
                             className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-antlia-blue/50 focus:border-antlia-blue"
-                            placeholder="+62 8xx xxxx xxxx"
+                            placeholder={t("form.phonePlaceholder")}
                           />
                         </div>
                         <div>
-                          <label htmlFor="company" className="block text-gray-700 font-medium mb-1">Perusahaan (opsional)</label>
+                          <label htmlFor="company" className="block text-gray-700 font-medium mb-1">{t("form.companyLabel")}</label>
                           <input 
                             type="text" 
                             id="company" 
@@ -241,13 +239,13 @@ const ContactPage = () => {
                             value={formData.company}
                             onChange={handleChange}
                             className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-antlia-blue/50 focus:border-antlia-blue"
-                            placeholder="Nama perusahaan"
+                            placeholder={t("form.companyPlaceholder")}
                           />
                         </div>
                       </div>
                       
                       <div className="mb-6">
-                        <label htmlFor="subject" className="block text-gray-700 font-medium mb-1">Jenis Layanan</label>
+                        <label htmlFor="subject" className="block text-gray-700 font-medium mb-1">{t("form.subjectLabel")}</label>
                         <select 
                           id="subject" 
                           name="subject"
@@ -256,7 +254,7 @@ const ContactPage = () => {
                           required
                           className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-antlia-blue/50 focus:border-antlia-blue"
                         >
-                          <option value="">Pilih layanan</option>
+                          <option value="">{t("form.subjectPlaceholder")}</option>
                           <option value="Antlia CRM">Antlia CRM</option>
                           <option value="Antlia POS">Antlia POS</option>
                           <option value="Antlia ERP">Antlia ERP</option>
@@ -272,7 +270,7 @@ const ContactPage = () => {
                       </div>
                       
                       <div className="mb-6">
-                        <label htmlFor="message" className="block text-gray-700 font-medium mb-1">Pesan</label>
+                        <label htmlFor="message" className="block text-gray-700 font-medium mb-1">{t("form.messageLabel")}</label>
                         <textarea 
                           id="message" 
                           name="message"
@@ -281,13 +279,13 @@ const ContactPage = () => {
                           onChange={handleChange}
                           required
                           className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-antlia-blue/50 focus:border-antlia-blue"
-                          placeholder="Jelaskan kebutuhan Anda secara detail..."
+                          placeholder={t("form.messagePlaceholder")}
                         ></textarea>
                       </div>
                       
                       <div>
                         <Button type="submit" className="bg-antlia-blue hover:bg-antlia-blue/80 w-full md:w-auto">
-                          Kirim Pesan
+                          {t("form.submitButton")}
                         </Button>
                       </div>
                     </form>
@@ -303,10 +301,10 @@ const ContactPage = () => {
       <section className="py-10 bg-antlia-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 animate-on-scroll">
-            <span className="subtitle block mb-2">Our Location</span>
-            <h2 className="text-xl font-bold mb-4">Temukan Kami</h2>
+            <span className="subtitle block mb-2">{t("map.subtitle")}</span>
+            <h2 className="text-xl font-bold mb-4">{t("map.title")}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Kunjungi kantor kami untuk diskusi langsung dengan tim ANTLIA.
+              {t("map.description")}
             </p>
           </div>
           
@@ -319,14 +317,11 @@ const ContactPage = () => {
               allowFullScreen={false} 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              title="ANTLIA Office Location"
+              title={t("map.iframeTitle")}
             ></iframe>
           </div>
         </div>
-      </section>
-      
-      {/* FAQ Section */}
-  
+      </section>  
     </>
   );
 };

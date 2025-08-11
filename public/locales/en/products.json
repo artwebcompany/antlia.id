@@ -1,0 +1,29 @@
+{
+    "page_hero": {
+      "title": "Featured Products",
+      "subtitle": "The best digital solutions designed specifically to meet your business needs"
+    },
+    "featured_products": {
+      "subtitle": "antlia Products",
+      "title": "All Our Products",
+      "description": "Our featured products have been proven to add significant value to businesses"
+    },
+    "product_cards": {
+      "view_detail": "View Details"
+    },
+    "cta_section": {
+      "title": "Can't Find the Product You're Looking For?",
+      "description": "ANTLIA also provides custom solutions designed specifically to meet your business's unique needs. Our development team is ready to work with you to create the right solution.",
+      "contact_us": "Contact Us",
+      "view_custom_services": "View Custom Services"
+    },
+    "product_descriptions": {
+      "antlia_crm": "A comprehensive customer management system with automation and analytics features",
+      "antlia_pos": "A digital cashier system that simplifies in-person and online sales transactions.",
+      "antlia_erp": "An Enterprise Resource Planning system to integrate and automate a company's business processes.",
+      "antlia_wms": "A warehouse management system to improve operational efficiency with barcode/RFID technology integration.",
+      "antlia_tms": "A transportation management system for logistics optimization, cost reduction, and improved customer satisfaction.",
+      "antlia_iot": "An Internet of Things solution for real-time monitoring of assets and business processes through a cloud dashboard.",
+      "antlia_hrm": "A human resource management system for automating recruitment, payroll, training, and employee performance."
+    }
+  }

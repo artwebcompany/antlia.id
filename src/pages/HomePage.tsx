@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-  CardFooter
+  CardFooter,
 } from "@/components/ui/card";
 import {
   ChevronRight,
@@ -14,7 +14,7 @@ import {
   Mail,
   ArrowRight,
   CheckCircle,
-  ArrowUp // 🔁 Icon baru ditambahkan
+  ArrowUp,
 } from "lucide-react";
 import HeroCarousel from "@/components/HeroCarousel";
 import ServicesSection from "@/components/ServicesSection";
@@ -27,6 +27,7 @@ import TeamSection from "@/components/TeamSection";
 import { Article } from "@/types/article";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/components/ui/use-toast";
+import { useTranslation } from "react-i18next"; 
 
 const partners = [
   { id: 1, name: "Company A", logo: "/assets/partner-1.png" },
@@ -42,52 +43,51 @@ const teamMembers = [
     name: "Ahmad Rasyid",
     position: "CEO & Founder",
     image: "/assets/team-1.jpg",
-    bio: "Memiliki pengalaman 15 tahun di industri teknologi informasi dengan fokus pada solusi enterprise.",
-    linkedin: "https://linkedin.com ",
-    email: "ahmad@antlia.id"
+    bio: "homepage.team.member1_bio", 
+    linkedin: "https://linkedin.com",
+    email: "ahmad@antlia.id",
   },
   {
     name: "Siti Nuraini",
     position: "CTO",
     image: "/assets/team-2.jpg",
-    bio: "Ahli teknologi dengan spesialisasi di cloud computing dan arsitektur sistem terdistribusi.",
-    linkedin: "https://linkedin.com ",
-    email: "siti@antlia.id"
+    bio: "homepage.team.member2_bio", 
+    linkedin: "https://linkedin.com",
+    email: "siti@antlia.id",
   },
   {
-    name: "Budi Santoso",
+    name: "Budi Santo",
     position: "Lead Developer",
     image: "/assets/team-3.jpg",
-    bio: "Pengembang senior dengan keahlian di berbagai bahasa pemrograman dan framework modern.",
-    linkedin: "https://linkedin.com ",
-    email: "budi@antlia.id"
+    bio: "homepage.team.member3_bio",
+    linkedin: "https://linkedin.com",
+    email: "budi@antlia.id",
   },
   {
     name: "Maya Putri",
     position: "UX Design Lead",
     image: "/assets/team-4.jpg",
-    bio: "Desainer UX berpengalaman dengan fokus pada menciptakan pengalaman digital yang intuitif dan efisien.",
-    linkedin: "https://linkedin.com ",
-    email: "maya@antlia.id"
-  }
+    bio: "homepage.team.member4_bio", 
+    linkedin: "https://linkedin.com",
+    email: "maya@antlia.id",
+  },
 ];
 
 const HomePage = () => {
+  const { t } = useTranslation("homepage"); 
   const isMobile = useIsMobile();
   const { toast } = useToast();
   const [latestArticles, setLatestArticles] = useState<Article[]>([]);
   const [isLoadingArticles, setIsLoadingArticles] = useState(true);
-  const [isScrolled, setIsScrolled] = useState(false); // 🆕 State untuk deteksi scroll
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  // 💡 Scroll to top handler
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
-  // 🧠 Deteksi scroll user
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -96,12 +96,10 @@ const HomePage = () => {
         setIsScrolled(false);
       }
     };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Fetch latest articles from Supabase
   useEffect(() => {
     const fetchLatestArticles = async () => {
       try {
@@ -116,7 +114,7 @@ const HomePage = () => {
           throw error;
         }
         if (data) {
-          const mappedArticles: Article[] = data.map(article => ({
+          const mappedArticles: Article[] = data.map((article) => ({
             id: article.id,
             title: article.title,
             slug: article.slug,
@@ -132,15 +130,15 @@ const HomePage = () => {
             coverImage: article.cover_image,
             status: article.status,
             readingTime: article.reading_time,
-            images: article.images || []
+            images: article.images || [],
           }));
           setLatestArticles(mappedArticles);
         }
       } catch (error: any) {
         console.error("Error fetching latest articles:", error);
         toast({
-          title: "Error",
-          description: `Gagal mengambil artikel terbaru: ${error.message}`,
+          title: t("article_fetch_error.title"),
+          description: `${t("article_fetch_error.description")}: ${error.message}`,
           variant: "destructive",
         });
       } finally {
@@ -148,26 +146,28 @@ const HomePage = () => {
       }
     };
     fetchLatestArticles();
-  }, [toast]);
+  }, [toast, t]);
 
   useEffect(() => {
-    // Initialize AOS-like animations
-    const animatedElements = document.querySelectorAll('.animate-on-scroll');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-in');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-    animatedElements.forEach(el => {
+    const animatedElements = document.querySelectorAll(".animate-on-scroll");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fade-in");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      },
+    );
+    animatedElements.forEach((el) => {
       observer.observe(el);
     });
     return () => {
-      animatedElements.forEach(el => {
+      animatedElements.forEach((el) => {
         observer.unobserve(el);
       });
     };
@@ -181,25 +181,23 @@ const HomePage = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-on-scroll">
-            <span className="subtitle block mb-2">Why Choose Us</span>
-            <h2 className="text-3xl font-bold mb-4">Mengapa Memilih ANTLIA?</h2>
+            <span className="subtitle block mb-2">{t("value_prop.subtitle")}</span>
+            <h2 className="text-3xl font-bold mb-4">{t("value_prop.title")}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              ANTLIA menyediakan solusi teknologi terbaik untuk membantu bisnis Anda
-              berkembang di era digital. Kami menggabungkan keahlian teknologi dengan
-              pemahaman bisnis yang mendalam.
+              {t("value_prop.description")}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div
               className="rounded-lg overflow-hidden p-[2px]"
               style={{
-                background: 'linear-gradient(135deg, #05b2fd, #6f42c1, #e17a9e)',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                background: "linear-gradient(135deg, #05b2fd, #6f42c1, #e17a9e)",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
               }}
             >
               <FeatureCard
-                title="Keahlian Teknis"
-                description="Tim ahli kami memiliki pengalaman luas dalam berbagai teknologi terkini"
+                title={t("value_prop.features.feature1_title")}
+                description={t("value_prop.features.feature1_description")}
                 icon="CheckCircle"
                 delay={100}
                 className="bg-white h-full"
@@ -208,13 +206,13 @@ const HomePage = () => {
             <div
               className="rounded-lg overflow-hidden p-[2px]"
               style={{
-                background: 'linear-gradient(135deg, #05b2fd, #6f42c1, #e17a9e)',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                background: "linear-gradient(135deg, #05b2fd, #6f42c1, #e17a9e)",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
               }}
             >
               <FeatureCard
-                title="Solusi Kustom"
-                description="Memiliki solusi yang disesuaikan dengan kebutuhan bisnis Anda"
+                title={t("value_prop.features.feature2_title")}
+                description={t("value_prop.features.feature2_description")}
                 icon="CheckCircle"
                 delay={200}
                 className="bg-white h-full"
@@ -223,13 +221,13 @@ const HomePage = () => {
             <div
               className="rounded-lg overflow-hidden p-[2px]"
               style={{
-                background: 'linear-gradient(135deg, #05b2fd, #6f42c1, #e17a9e)',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                background: "linear-gradient(135deg, #05b2fd, #6f42c1, #e17a9e)",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
               }}
             >
               <FeatureCard
-                title="Dukungan 24/7"
-                description="Layanan teknis tersedia 24 jam agar bisnis Anda berjalan lancar"
+                title={t("value_prop.features.feature3_title")}
+                description={t("value_prop.features.feature3_description")}
                 icon="CheckCircle"
                 delay={300}
                 className="bg-white h-full"
@@ -246,31 +244,35 @@ const HomePage = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-on-scroll">
-            <span className="subtitle block mb-2">Our Products</span>
-            <h2 className="text-3xl font-bold mb-4">Produk Unggulan</h2>
+            <span className="subtitle block mb-2">{t("products.subtitle")}</span>
+            <h2 className="text-3xl font-bold mb-4">{t("products.title")}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Solusi perangkat lunak terbaik untuk membantu bisnis Anda berkembang dan bersaing
+              {t("products.description")}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 title: "ANTLIA CRM",
-                description: "Sistem manajemen pelanggan komprehensif dengan fitur otomatisasi dan analitik",
-                image: "/assets/product-1.jpg"
+                description: t("products.product1_desc"),
+                image: "/assets/product-1.jpg",
               },
               {
                 title: "ANTLIA ERP",
-                description: "Solusi Enterprise Resource Planning terintegrasi untuk efisiensi operasional bisnis",
-                image: "/assets/product-2.jpg"
+                description: t("products.product2_desc"),
+                image: "/assets/product-2.jpg",
               },
               {
                 title: "ANTLIA Analytics",
-                description: "Platform analitik data untuk mengubah data mentah menjadi wawasan bisnis yang berharga",
-                image: "/assets/product-3.jpg"
-              }
+                description: t("products.product3_desc"),
+                image: "/assets/product-3.jpg",
+              },
             ].map((product, index) => (
-              <Card key={index} className="product-card overflow-hidden animate-on-scroll" style={{ animationDelay: `${index * 100}ms` }}>
+              <Card
+                key={index}
+                className="product-card overflow-hidden animate-on-scroll"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
                 <div className="h-52 overflow-hidden">
                   <img
                     src={product.image}
@@ -280,7 +282,7 @@ const HomePage = () => {
                   <div className="product-overlay">
                     <h3 className="text-xl font-bold mb-2">{product.title}</h3>
                     <Button className="mt-4 bg-antlia-blue hover:bg-antlia-blue/80">
-                      <Link to="/produk-layanan">Lihat Detail</Link>
+                      <Link to="/produk-layanan">{t("products.view_details_link")}</Link>
                     </Button>
                   </div>
                 </div>
@@ -291,7 +293,7 @@ const HomePage = () => {
                     to="/produk-layanan"
                     className="text-antlia-blue hover:underline flex items-center font-medium"
                   >
-                    Lihat Detail <ArrowRight className="ml-1 w-4 h-4" />
+                    {t("products.view_details_link")} <ArrowRight className="ml-1 w-4 h-4" />
                   </Link>
                 </CardContent>
               </Card>
@@ -300,7 +302,7 @@ const HomePage = () => {
           <div className="text-center mt-10 animate-on-scroll">
             <Button className="bg-antlia-blue hover:bg-antlia-blue/80">
               <Link to="/produk-layanan" className="flex items-center">
-                Lihat Semua Produk <ArrowRight className="ml-2 w-4 h-4" />
+                {t("products.view_all_products_button")} <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
           </div>
@@ -315,20 +317,22 @@ const HomePage = () => {
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-antlia-cyan/10 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between">
               <div className="mb-8 md:mb-0 md:mr-8 text-center md:text-left">
-                <h2 className="text-3xl font-bold mb-4">Siap untuk Transformasi Digital?</h2>
+                <h2 className="text-3xl font-bold mb-4">{t("cta.title")}</h2>
                 <p className="text-gray-600 mb-6 max-w-xl">
-                  Mari diskusikan bagaimana ANTLIA dapat membantu bisnis Anda berkembang
-                  melalui solusi teknologi yang inovatif dan efisien.
+                  {t("cta.description")}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                   <Button className="bg-antlia-blue hover:bg-antlia-blue/80">
                     <Link to="/kontak" className="flex items-center">
-                      Hubungi Kami <ArrowRight size={16} className="ml-2" />
+                      {t("cta.contact_button")} <ArrowRight size={16} className="ml-2" />
                     </Link>
                   </Button>
-                  <Button variant="outline" className="border-antlia-blue text-antlia-blue hover:bg-antlia-blue/10">
+                  <Button
+                    variant="outline"
+                    className="border-antlia-blue text-antlia-blue hover:bg-antlia-blue/10"
+                  >
                     <a
-                      href="https://wa.me/6281573635143 "
+                      href="https://wa.me/6281573635143"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center"
@@ -341,7 +345,7 @@ const HomePage = () => {
               <div className="w-full md:w-1/3">
                 <img
                   src="/assets/cta-image.png"
-                  alt="Digital Transformation"
+                  alt={t("cta.image_alt")}
                   className="w-full h-auto rounded-lg shadow-md"
                 />
               </div>
@@ -350,43 +354,43 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      {/* <TestimonialsSlider /> */}
-
       {/* Partner Logos */}
       <LogoMarquee logos={partners} />
-
+      
       {/* Blog Preview Section - Updated to use real articles from Supabase */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-on-scroll">
-            <span className="subtitle block mb-2">Latest Updates</span>
-            <h2 className="text-3xl font-bold mb-4">Artikel Terbaru</h2>
+            <span className="subtitle block mb-2">{t("articles.subtitle")}</span>
+            <h2 className="text-3xl font-bold mb-4">{t("articles.title")}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Temukan informasi terbaru seputar teknologi dan inovasi digital
-              di blog ANTLIA.
+              {t("articles.description")}
             </p>
           </div>
+
           {isLoadingArticles ? (
             <div className="flex justify-center py-12">
               <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-antlia-blue"></div>
             </div>
           ) : latestArticles.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {latestArticles.map((article, index) => (
                 <div
                   key={article.id}
-                  className="rounded-lg overflow-hidden p-[2px]"
+                  className="rounded-lg overflow-hidden p-[2px] flex flex-col"
                   style={{
-                    background: 'linear-gradient(135deg, #05b2fd, #6f42c1, #e17a9e)',
-                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                    background: "linear-gradient(135deg, #05b2fd, #6f42c1, #e17a9e)",
+                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                   }}
                 >
-                  <Card className="border-0 h-full animate-on-scroll bg-white" style={{ animationDelay: `${index * 100}ms` }}>
+                  <Card
+                    className="border-0 bg-white flex flex-col h-full animate-on-scroll"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
                     <CardHeader>
                       <CardTitle className="line-clamp-2">{article.title}</CardTitle>
                       <CardDescription>
-                        {new Date(article.publishedAt).toLocaleDateString('id-ID')}
+                        {new Date(article.publishedAt).toLocaleDateString("id-ID")}
                         {article.category && (
                           <span className="inline-block bg-antlia-blue/10 text-antlia-blue px-2 py-1 text-xs rounded-full ml-2">
                             {article.category}
@@ -394,13 +398,13 @@ const HomePage = () => {
                         )}
                       </CardDescription>
                     </CardHeader>
-                    <CardContent>
-                      <div className="h-48 overflow-hidden rounded-md mb-4">
+                    <CardContent className="flex-grow flex flex-col">
+                      <div className="relative w-full aspect-[4/3] bg-gray-100 rounded-md mb-4 flex items-center justify-center overflow-hidden">
                         {article.coverImage ? (
                           <img
                             src={article.coverImage}
                             alt={article.title}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                           />
                         ) : (
                           <div className="w-full h-full bg-antlia-light/30 flex items-center justify-center">
@@ -426,8 +430,11 @@ const HomePage = () => {
                       </p>
                     </CardContent>
                     <CardFooter>
-                      <Link to={`/artikel/${article.slug}`} className="text-antlia-blue hover:underline flex items-center">
-                        Baca selengkapnya <ChevronRight className="ml-1 w-4 h-4" />
+                      <Link
+                        to={`/artikel/${article.slug}`}
+                        className="text-antlia-blue hover:underline flex items-center"
+                      >
+                        {t("articles.read_more_link")} <ChevronRight className="ml-1 w-4 h-4" />
                       </Link>
                     </CardFooter>
                   </Card>
@@ -436,20 +443,20 @@ const HomePage = () => {
             </div>
           ) : (
             <div className="text-center py-8">
-              <p className="text-gray-600">Belum ada artikel yang dipublikasikan</p>
+              <p className="text-gray-600">{t("articles.no_articles_message")}</p>
             </div>
           )}
           <div className="text-center mt-12">
             <Button variant="outline" asChild>
               <Link to="/artikel" className="flex items-center">
-                Lihat Semua Artikel <ArrowRight size={16} className="ml-2" />
+                {t("articles.view_all_articles_button")} <ArrowRight size={16} className="ml-2" />
               </Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* 🔼 Tombol Scroll to Top - Tambahkan di sini */}
+      {/* Scroll to top button */}
       {isScrolled && (
         <button
           onClick={scrollToTop}
@@ -459,7 +466,6 @@ const HomePage = () => {
           <ArrowUp size={20} />
         </button>
       )}
-
     </div>
   );
 };

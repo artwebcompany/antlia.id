@@ -1,0 +1,60 @@
+{
+    "hero": {
+      "title": "Hubungi Kami",
+      "subtitle": "Tim kami siap membantu Anda dengan pertanyaan dan kebutuhan Anda"
+    },
+    "contactInfo": {
+      "subtitle": "Get in Touch",
+      "title": "Informasi Kontak",
+      "description": "Hubungi kami untuk konsultasi, informasi lebih lanjut, atau mulai kerjasama.",
+      "phone": {
+        "title": "Telepon",
+        "productLabel": "Produk (Pak Roni)",
+        "trainingLabel": "Training (Angela)"
+      },
+      "email": {
+        "title": "Email",
+        "productLabel": "Produk",
+        "trainingLabel": "Training"
+      },
+      "address": {
+        "title": "Kantor Pusat",
+        "city": "Tangerang",
+        "line1": "The Avani Nittaya, BSD City,",
+        "line2": "Cisauk, Banten, Tangerang",
+        "line3": ""
+      },
+      "hours": {
+        "title": "Jam Kerja",
+        "weekday": "Senin - Jumat: 08:00 - 17:00",
+        "saturday": "Sabtu : 08:00 - 14.00",
+        "customerService": "Customer Services : 24/7"
+      }
+    },
+    "form": {
+      "title": "Kirim Pesan",
+      "description": "Isi formulir di bawah ini dan tim kami akan menghubungi Anda sesegera mungkin.",
+      "nameLabel": "Nama Lengkap",
+      "namePlaceholder": "Masukkan nama lengkap",
+      "emailLabel": "Email",
+      "emailPlaceholder": "contoh@email.com",
+      "phoneLabel": "Nomor Telepon",
+      "phonePlaceholder": "+62 8xx xxxx xxxx",
+      "companyLabel": "Perusahaan (opsional)",
+      "companyPlaceholder": "Nama perusahaan",
+      "subjectLabel": "Jenis Layanan",
+      "subjectPlaceholder": "Pilih layanan",
+      "messageLabel": "Pesan",
+      "messagePlaceholder": "Jelaskan kebutuhan Anda secara detail...",
+      "submitButton": "Kirim Pesan",
+      "successTitle": "Pesan Terkirim!",
+      "successMessage": "Terima kasih telah menghubungi kami. Tim kami akan segera meninjau pesan Anda dan menghubungi Anda."
+    },
+    "map": {
+      "subtitle": "Our Location",
+      "title": "Temukan Kami",
+      "description": "Kunjungi kantor kami untuk diskusi langsung dengan tim ANTLIA.",
+      "iframeTitle": "Lokasi Kantor ANTLIA"
+    }
+  }
+  

@@ -1,6 +1,6 @@
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Laptop, Heart, Settings, Users } from "lucide-react";
@@ -8,10 +8,15 @@ import PageHero from "@/components/PageHero";
 import FeatureCard from "@/components/FeatureCard";
 
 const SolutionsPage = () => {
+  const { t } = useTranslation("solutions");
+
+  const industryCards = t("industrySolutions.cards", { returnObjects: true }) as { title: string; description: string; }[];
+  const digitalTransformationCards = t("digitalTransformation.featureCards", { returnObjects: true }) as { title: string; description: string; }[];
+  const methodologySteps = t("methodology.steps", { returnObjects: true }) as { title: string; description: string; }[];
+  const businessOutcomesMetrics = t("businessOutcomes.metrics", { returnObjects: true }) as { metric: string; title: string; description: string; }[];
+
   useEffect(() => {
-    // Animate elements on scroll
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
-    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -31,8 +36,8 @@ const SolutionsPage = () => {
   return (
     <>
       <PageHero 
-        title="Solusi" 
-        subtitle="Pendekatan komprehensif untuk tantangan bisnis dengan teknologi terkini"
+        title={t("hero.title")} 
+        subtitle={t("hero.subtitle")}
         backgroundImage="/assets/solutions-hero-bg.jpg"
       />
 
@@ -41,44 +46,26 @@ const SolutionsPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-on-scroll">
-              <span className="subtitle block mb-2">Industry Focus</span>
-              <h2 className="text-xl font-bold mb-6">Solusi Industri</h2>
+              <span className="subtitle block mb-2">{t("industrySolutions.subtitle")}</span>
+              <h2 className="text-xl font-bold mb-6">{t("industrySolutions.title")}</h2>
               <p className="text-gray-600 mb-6">
-                ANTLIA menyediakan solusi yang dirancang khusus untuk berbagai sektor industri, 
-                memahami tantangan unik yang dihadapi oleh setiap sektor dan menghadirkan teknologi 
-                yang relevan untuk mengatasi tantangan tersebut.
+                {t("industrySolutions.description")}
               </p>
               <div className="grid grid-cols-2 gap-4">
-                <Card className="border-antlia-blue/20 hover:shadow-md transition-all duration-300">
-                  <CardContent className="p-4">
-                    <h3 className="text-lg font-semibold mb-2">Perbankan & Keuangan</h3>
-                    <p className="text-sm text-gray-600">Solusi keamanan dan analitik untuk lembaga keuangan</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-antlia-blue/20 hover:shadow-md transition-all duration-300">
-                  <CardContent className="p-4">
-                    <h3 className="text-lg font-semibold mb-2">Ritel & E-commerce</h3>
-                    <p className="text-sm text-gray-600">Platform omnichannel untuk pengalaman pelanggan terbaik</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-antlia-blue/20 hover:shadow-md transition-all duration-300">
-                  <CardContent className="p-4">
-                    <h3 className="text-lg font-semibold mb-2">Manufaktur</h3>
-                    <p className="text-sm text-gray-600">Otomatisasi dan optimasi proses produksi</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-antlia-blue/20 hover:shadow-md transition-all duration-300">
-                  <CardContent className="p-4">
-                    <h3 className="text-lg font-semibold mb-2">Kesehatan</h3>
-                    <p className="text-sm text-gray-600">Sistem manajemen data pasien dan telemedicine</p>
-                  </CardContent>
-                </Card>
+                {Array.isArray(industryCards) && industryCards.map((card, index) => (
+                  <Card key={index} className="border-antlia-blue/20 hover:shadow-md transition-all duration-300">
+                    <CardContent className="p-4">
+                      <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
+                      <p className="text-sm text-gray-600">{card.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </div>
             <div className="relative animate-on-scroll" style={{animationDelay: "200ms"}}>
               <img
                 src="/assets/industry-solutions.jpg"
-                alt="Solusi Industri"
+                alt={t("industrySolutions.title")}
                 className="rounded-xl shadow-xl w-full h-auto"
               />
               <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white via-white/20 to-transparent"></div>
@@ -91,77 +78,40 @@ const SolutionsPage = () => {
       <section className="py-16 bg-antlia-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-on-scroll">
-            <span className="subtitle block mb-2">Digital Evolution</span>
-            <h2 className="text-xl font-bold mb-4">Solusi Transformasi Digital</h2>
+            <span className="subtitle block mb-2">{t("digitalTransformation.subtitle")}</span>
+            <h2 className="text-xl font-bold mb-4">{t("digitalTransformation.title")}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Pendekatan holistik untuk transformasi digital bisnis Anda
+              {t("digitalTransformation.description")}
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <FeatureCard 
-              title="Digital Workplace" 
-              description="Platform kolaborasi dan produktivitas untuk lingkungan kerja modern dan fleksibel"
-              icon="Laptop"
-              delay={100}
-            />
-            <FeatureCard 
-              title="Customer Experience" 
-              description="Solusi yang mengutamakan pengalaman pelanggan di semua titik kontak digital"
-              icon="Heart"
-              delay={200}
-            />
-            <FeatureCard 
-              title="Digital Operations" 
-              description="Otomatisasi dan optimasi proses bisnis untuk efisiensi operasional yang lebih tinggi"
-              icon="Settings"
-              delay={300}
-            />
+            {Array.isArray(digitalTransformationCards) && digitalTransformationCards.map((card, index) => (
+              <FeatureCard 
+                key={index}
+                title={card.title}
+                description={card.description}
+                icon={index === 0 ? "Laptop" : index === 1 ? "Heart" : "Settings"}
+                delay={100 * (index + 1)}
+              />
+            ))}
           </div>
         </div>
       </section>
-      
-   
       
       {/* Methodology */}
       <section className="py-16 bg-antlia-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-on-scroll">
-            <span className="subtitle block mb-2">Our Approach</span>
-            <h2 className="text-xl font-bold mb-4">Metodologi Kami</h2>
+            <span className="subtitle block mb-2">{t("methodology.subtitle")}</span>
+            <h2 className="text-xl font-bold mb-4">{t("methodology.title")}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Pendekatan terstruktur untuk memastikan kesuksesan proyek transformasi digital Anda
+              {t("methodology.description")}
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            {[
-              {
-                step: "01",
-                title: "Penilaian & Perencanaan",
-                description: "Menganalisis kebutuhan dan menyusun roadmap transformasi digital yang sesuai"
-              },
-              {
-                step: "02",
-                title: "Desain & Pengembangan",
-                description: "Merancang dan membangun solusi dengan metodologi agile"
-              },
-              {
-                step: "03",
-                title: "Implementasi & Integrasi",
-                description: "Menerapkan solusi dan mengintegrasikannya dengan sistem yang ada"
-              },
-              {
-                step: "04",
-                title: "Pelatihan & Adopsi",
-                description: "Memastikan tim Anda siap mengoptimalkan solusi baru"
-              },
-              {
-                step: "05",
-                title: "Evaluasi & Pengembangan",
-                description: "Mengukur hasil dan terus meningkatkan solusi berdasarkan feedback"
-              }
-            ].map((item, index) => (
+            {Array.isArray(methodologySteps) && methodologySteps.map((item, index) => (
               <Card 
                 key={index} 
                 className="hover:shadow-lg transition-all duration-300 border-t-4 border-t-antlia-blue animate-on-scroll" 
@@ -169,7 +119,7 @@ const SolutionsPage = () => {
               >
                 <CardContent className="p-6">
                   <div className="w-12 h-12 rounded-full bg-antlia-blue/10 flex items-center justify-center mb-4 text-antlia-blue font-bold">
-                    {item.step}
+                    {`0${index + 1}`}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>
@@ -184,36 +134,15 @@ const SolutionsPage = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-on-scroll">
-            <span className="subtitle block mb-2">Results & Impact</span>
-            <h2 className="text-xl font-bold mb-4">Hasil Bisnis</h2>
+            <span className="subtitle block mb-2">{t("businessOutcomes.subtitle")}</span>
+            <h2 className="text-xl font-bold mb-4">{t("businessOutcomes.title")}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Dampak nyata yang dihasilkan oleh solusi ANTLIA untuk bisnis klien kami
+              {t("businessOutcomes.description")}
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                metric: "35%",
-                title: "Peningkatan Efisiensi",
-                description: "Rata-rata peningkatan efisiensi operasional yang dicapai klien kami"
-              },
-              {
-                metric: "40%",
-                title: "Pengurangan Biaya",
-                description: "Rata-rata pengurangan biaya operasional melalui otomatisasi dan optimasi"
-              },
-              {
-                metric: "50%",
-                title: "Peningkatan Keterlibatan",
-                description: "Rata-rata peningkatan keterlibatan pelanggan melalui pengalaman digital yang lebih baik"
-              },
-              {
-                metric: "28%",
-                title: "Pertumbuhan Pendapatan",
-                description: "Rata-rata pertumbuhan pendapatan yang dicapai melalui solusi digital kami"
-              }
-            ].map((item, index) => (
+            {Array.isArray(businessOutcomesMetrics) && businessOutcomesMetrics.map((item, index) => (
               <Card 
                 key={index} 
                 className="hover:shadow-lg transition-all duration-300 text-center animate-on-scroll" 
@@ -236,25 +165,24 @@ const SolutionsPage = () => {
           <div className="bg-gradient-to-r from-antlia-blue to-antlia-cyan rounded-xl overflow-hidden shadow-lg animate-on-scroll">
             <div className="p-8 md:p-12 text-white">
               <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-xl font-bold mb-4">Mulai Transformasi Digital Anda</h2>
+                <h2 className="text-xl font-bold mb-4">{t("cta.title")}</h2>
                 <p className="mb-6">
-                  Tim ANTLIA siap membantu Anda mengidentifikasi solusi yang tepat untuk kebutuhan bisnis Anda.
-                  Hubungi kami sekarang untuk konsultasi awal.
+                  {t("cta.description")}
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button className="bg-white text-antlia-blue hover:bg-white/90">
                     <Link to="/kontak" className="flex items-center">
-                      Jadwalkan Konsultasi
+                      {t("cta.consultationButton")}
                     </Link>
                   </Button>
                   <Button variant="outline" className="border-white text-white hover:bg-white/10">
                     <a 
-                      href="https://wa.me/6287762877273" 
+                      href="https://wa.me/6285846612211" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center"
                     >
-                      Hubungi via WhatsApp
+                      {t("cta.whatsappButton")}
                     </a>
                   </Button>
                 </div>

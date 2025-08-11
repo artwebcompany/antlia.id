@@ -1,0 +1,49 @@
+{
+    "hero": {
+      "title": "Layanan Profesional",
+      "subtitle": "Jasa konsultasi dan implementasi teknologi oleh tim ahli berpengalaman"
+    },
+    "featuredServices": {
+      "subtitle": "Layanan Kami",
+      "title": "Layanan Utama",
+      "description": "Jasa profesional ANTLIA untuk membantu transformasi digital bisnis Anda"
+    },
+    "allServices": {
+      "subtitle": "Layanan Profesional",
+      "title": "Semua Layanan",
+      "description": "Jelajahi berbagai jasa profesional untuk mendukung kebutuhan teknologi bisnis Anda"
+    },
+    "cta": {
+      "title": "Butuh Solusi Khusus?",
+      "description": "Tim ANTLIA siap membantu Anda dengan solusi yang disesuaikan dengan kebutuhan spesifik bisnis Anda. Hubungi kami sekarang untuk konsultasi gratis.",
+      "contactUs": "Hubungi Kami",
+      "contactWhatsApp": "Hubungi via WhatsApp",
+      "imageAlt": "Transformasi Digital"
+    },
+    "services": {
+      "it-consulting": {
+        "name": "Konsultasi IT",
+        "shortDescription": "Konsultasi IT untuk solusi infrastruktur TI, manajemen sistem, dan implementasi teknologi yang efisien."
+      },
+      "business-operations-consulting": {
+        "name": "Konsultasi Operasional Bisnis",
+        "shortDescription": "Meningkatkan kinerja bisnis melalui pengembangan proses operasional dan kapasitas organisasi."
+      },
+      "excel-training-course": {
+        "name": "Pelatihan Excel",
+        "shortDescription": "Pelatihan Excel untuk meningkatkan keterampilan analisis data dan penyusunan laporan profesional."
+      },
+      "workplace-communication-training": {
+        "name": "Pelatihan Komunikasi di Tempat Kerja",
+        "shortDescription": "Pelatihan komunikasi profesional untuk meningkatkan kemampuan persuasif di tempat kerja."
+      }
+    },
+    "categories": {
+      "consulting": "Konsultasi",
+      "training": "Pelatihan"
+    },
+    "common": {
+      "viewDetails": "Lihat Detail"
+    }
+  }
+  

@@ -12,7 +12,6 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({
   title = "Mitra Kerja Kami", 
   subtitle = "Beberapa perusahaan yang telah bekerja sama dengan ANTLIA" 
 }) => {
-  // Duplicate the logos to create a seamless loop
   const duplicatedLogos = [...logos, ...logos];
   
   return (

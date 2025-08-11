@@ -1,0 +1,123 @@
+{
+  "aboutPage": {
+    "hero": {
+      "title": "Tentang Kami",
+      "subtitle": "Kenali lebih dalam mengenai sejarah, visi, misi, dan nilai-nilai yang mendorong inovasi kami"
+    },
+    "history": {
+      "subtitle": "Cerita Kami",
+      "title": "Tentang ANTLIA",
+      "p1": "Terinspirasi dari konstelasi Antlia yang berarti “pompa”, kami hadir sebagai energi pendorong inovasi di dunia digital. Filosofi ini sejalan dengan visi misi kami: mendukung pertumbuhan ekonomi global lewat solusi teknologi yang efisien, hemat biaya, dan ramah lingkungan.",
+      "p2": "Lewat produk seperti POS, ERP, WMS, TMS, HRM, CRM, , IoT, dan 3PL kami menghadirkan sistem yang saling terhubung untuk membangun rantai pasok yang transparan, kolaboratif, dan berkelanjutan. Tidak hanya itu, Antlia memiliki servis berupa Business Operational Consulting, Excel Training, dan Workplace Communication Training.",
+      "p3": "Sebagai bagian dari Techno King, Antlia siap tumbuh bersama Anda dengan teknologi yang relevan, berdampak, dan bernilai jangka panjang.",
+      "experienceYears": "10+",
+      "experienceLabel": "Tahun Pengalaman"
+    },
+    "timeline": {
+      "subtitle": "Perjalanan Kami",
+      "title": "Milestone Perjalanan Kami",
+      "description": "Perjalanan ANTLIA dalam menghadirkan solusi teknologi terbaik untuk Indonesia",
+      "milestone1": {
+        "year": "2013",
+        "title": "Pendirian ANTLIA",
+        "description": "ANTLIA didirikan sebagai perusahaan konsultan IT dengan fokus pada pengembangan aplikasi web."
+      },
+      "milestone2": {
+        "year": "2015",
+        "title": "Ekspansi Layanan",
+        "description": "Memperluas layanan ke pengembangan aplikasi mobile dan solusi cloud."
+      },
+      "milestone3": {
+        "year": "2017",
+        "title": "Pembukaan Kantor Regional",
+        "description": "Membuka kantor regional pertama di Surabaya untuk melayani klien di Indonesia Timur."
+      },
+      "milestone4": {
+        "year": "2019",
+        "title": "Peluncuran Produk Pertama",
+        "description": "Meluncurkan ANTLIA CRM, produk perangkat lunak pertama untuk manajemen hubungan pelanggan."
+      },
+      "milestone5": {
+        "year": "2021",
+        "title": "Pencapaian 100+ Klien",
+        "description": "Mencapai tonggak 100+ klien dari berbagai industri di seluruh Indonesia."
+      },
+      "milestone6": {
+        "year": "2023",
+        "title": "Transformasi Digital Hub",
+        "description": "Meluncurkan Digital Transformation Hub untuk mendukung perusahaan dalam perjalanan transformasi digital mereka."
+      }
+    },
+    "visionMission": {
+      "subtitle": "Tujuan Kami",
+      "title": "Visi & Misi",
+      "description": "Komitmen kami untuk masa depan yang lebih baik melalui teknologi",
+      "visionTitle": "Visi Kami",
+      "visionText": "Mendukung pertumbuhan ekonomi global dengan memberikan solusi teknologi rantai pasokan inovatif yang meningkatkan produktivitas, mengurangi biaya, dan meminimalkan dampak lingkungan.",
+      "missionTitle": "Misi Kami",
+      "missionText": "Menghadirkan solusi teknologi yang inovatif, efektif, dan sesuai kebutuhan untuk membantu bisnis berkembang di era digital yang kompetitif.",
+      "missionItem1": "Mengembangkan dan menerapkan teknologi canggih",
+      "missionItem2": "Membangun ekosistem kolaboratif yang kuat dengan mitra industri",
+      "missionItem3": "Menyediakan platform teknologi yang komprehensif",
+      "missionItem4": "Mendorong penerapan teknologi berkelanjutan dalam rantai pasokan",
+      "missionItem5": "Membangun rantai pasokan yang transparan dan dapat dilacak",
+      "missionItem6": "Memberikan kontribusi positif bagi masyarakat"
+    },
+    "coreValues": {
+      "subtitle": "Prinsip Panduan",
+      "title": "Nilai-Nilai Kami",
+      "description": "Prinsip-prinsip yang menjadi fondasi setiap keputusan dan tindakan kami",
+      "value1": {
+        "value": "Inovasi",
+        "description": "Kami selalu mencari cara baru dan lebih baik untuk menyelesaikan masalah dan menciptakan nilai."
+      },
+      "value2": {
+        "value": "Integritas",
+        "description": "Kejujuran dan transparansi adalah dasar dari setiap interaksi dengan klien, mitra, dan antar tim."
+      },
+      "value3": {
+        "value": "Kolaborasi",
+        "description": "Kami percaya bahwa hasil terbaik datang dari kerja sama tim dan kemitraan yang kuat."
+      },
+      "value4": {
+        "value": "Keunggulan",
+        "description": "Kami berkomitmen untuk memberikan kualitas tertinggi dalam setiap aspek pekerjaan kami."
+      }
+    },
+    "team": {
+      "title": "Tim Kami",
+      "subtitle": "Temui Para Ahli",
+      "description": "Didukung oleh profesional berpengalaman yang berdedikasi untuk memberikan yang terbaik",
+      "member1": {
+        "name": "Ahmad Rasyid",
+        "position": "CEO & Founder",
+        "bio": "Memiliki pengalaman 15 tahun di industri teknologi informasi dengan fokus pada solusi enterprise."
+      },
+      "member2": {
+        "name": "Siti Nuraini",
+        "position": "CTO",
+        "bio": "Ahli teknologi dengan spesialisasi di cloud computing dan arsitektur sistem terdistribusi."
+      },
+      "member3": {
+        "name": "Budi Santoso",
+        "position": "Lead Developer",
+        "bio": "Pengembang senior dengan keahlian di berbagai bahasa pemrograman dan framework modern."
+      },
+      "member4": {
+        "name": "Maya Putri",
+        "position": "UX Design Lead",
+        "bio": "Desainer UX berpengalaman dengan fokus pada menciptakan pengalaman digital yang intuitif dan efisien."
+      }
+    },
+    "partners": {
+      "title": "Mitra Kami",
+      "subtitle": "Bekerja sama dengan berbagai perusahaan terkemuka untuk menghadirkan solusi terbaik"
+    },
+    "cta": {
+      "title": "Jadilah Bagian dari Perjalanan Kami",
+      "description": "Apakah Anda mencari solusi teknologi untuk bisnis Anda atau berminat untuk bergabung dengan tim kami? Hubungi kami sekarang untuk memulai percakapan.",
+      "contactButton": "Hubungi Kami",
+      "careersButton": "Karir di ANTLIA"
+    }
+  }
+}
